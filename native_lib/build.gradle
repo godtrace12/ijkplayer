@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+//    publishNonDefault true
+
+    defaultConfig {
+
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions -std=gnu++11 -std=c++98  -DWEBRTC_POSIX -DNMDEBUG" +
+                        " -D__STDC_CONSTANT_MACROS -DUSR_DEF_ENABLE_CONVERTER=1" +
+                        " -DUSR_CODEC_DEBUG=0" +
+                        " -DTESR_RUNTIME_COST=0"
+//                cppFlags ""
+            }
+        }
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+
+//        externalNativeBuild {
+//            cmake {
+//                arguments "-DANDROID_TOOLCHAIN=clang"
+//                targets "android-ndk-profiler","ijkj4a","yuv","ijksdl","ijkplayer"
+//                abiFilters 'armeabi-v7a'
+//            }
+//        }
+//
+//        ndk {
+//            abiFilters "armeabi-v7a"
+//        }
+
+//        ndk {
+//            abiFilters "armeabi-v7a", "x86","arm64-v8a","x86_64"
+//        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets{
+        main{
+            jniLibs.srcDir 'libs'
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

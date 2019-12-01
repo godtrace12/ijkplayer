@@ -1,0 +1,3 @@
+/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/ijkplayer.dir

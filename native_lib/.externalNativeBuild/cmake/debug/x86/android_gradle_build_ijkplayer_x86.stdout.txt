@@ -1,0 +1,636 @@
+[1/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/android-ndk-prof/prof.c.o
+[2/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/AudioTrack.c.o
+[3/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/MediaCodec.c.o
+[4/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/MediaFormat.c.o
+[5/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/PlaybackParams.c.o
+[6/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/os/Build.c.o
+[7/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/os/Bundle.c.o
+[8/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/java/nio/Buffer.c.o
+[9/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/java/nio/ByteBuffer.c.o
+[10/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/java/util/ArrayList.c.o
+[11/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/tv/danmaku/ijk/media/player/IjkMediaPlayer.c.o
+[12/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/tv/danmaku/ijk/media/player/misc/IAndroidIO.c.o
+[13/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/tv/danmaku/ijk/media/player/misc/IMediaDataSource.c.o
+[14/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/j4a_allclasses.c.o
+[15/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/j4a_base.c.o
+[16/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4au/class/android/media/AudioTrack.util.c.o
+[17/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4au/class/java/nio/ByteBuffer.util.c.o
+[18/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/ffmpeg_api_jni.c.o
+[19/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/ijkplayer_android.c.o
+[20/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/ijkplayer_jni.c.o
+[21/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipeline_android.c.o
+[22/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c.o
+[23/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c.o
+[24/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_ffpipeline.c.o
+[25/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_ffpipenode.c.o
+[26/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c.o
+[27/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c.o
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipeline_android.c:109:31: warning: incompatible pointer to integer conversion initializing 'int' with an expression of type 'void *' [-Wint-conversion]
+    int                       ret = NULL;
+                              ^     ~~~~
+1 warning generated.
+[28/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c.o
+[29/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkio.c.o
+[30/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioandroidio.c.o
+[31/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioapplication.c.o
+[32/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c.o
+[33/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioffio.c.o
+[34/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c.o
+[35/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioprotocol.c.o
+[36/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c.o
+[37/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c.o
+[38/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklongurl.c.o
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:509:9: warning: 'av_packet_split_side_data' is deprecated [-Wdeprecated-declarations]
+        av_packet_split_side_data(&pkt);
+        ^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavcodec/avcodec.h:4706:1: note: 'av_packet_split_side_data' has been explicitly marked deprecated here
+attribute_deprecated
+^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:550:30: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+                change_ret = avcodec_decode_video2(new_avctx, frame, &got_picture, avpkt);
+                             ^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavcodec/avcodec.h:4993:1: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+attribute_deprecated
+^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:757:9: warning: 'av_packet_split_side_data' is deprecated [-Wdeprecated-declarations]
+        av_packet_split_side_data(&pkt);
+        ^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavcodec/avcodec.h:4706:1: note: 'av_packet_split_side_data' has been explicitly marked deprecated here
+attribute_deprecated
+^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:797:30: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+                change_ret = avcodec_decode_video2(new_avctx, frame, &got_picture, avpkt);
+                             ^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavcodec/avcodec.h:4993:1: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+attribute_deprecated
+^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+4 warnings generated.
+[39/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkmediadatasource.c.o
+[40/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijksegment.c.o
+[41/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c.o
+[42/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkdict.c.o
+[43/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkfifo.c.o
+[44/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkthreadpool.c.o
+[45/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijktree.c.o
+[46/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkutils.c.o
+[47/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkmeta.c.o
+[48/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkplayer.c.o
+[49/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/pipeline/ffpipeline_ffplay.c.o
+[50/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/pipeline/ffpipenode_ffplay_vdec.c.o
+[51/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/android_audiotrack.c.o
+[52/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/android_nativewindow.c.o
+[53/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_android_jni.c.o
+[54/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_aout_android_audiotrack.c.o
+[55/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_aout_android_opensles.c.o
+[56/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec.c.o
+[57/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec_dummy.c.o
+[58/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec_internal.c.o
+[59/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec_java.c.o
+[60/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediadef.c.o
+[61/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediaformat.c.o
+[62/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediaformat_java.c.o
+[63/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_vout_android_nativewindow.c.o
+[64/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_vout_android_surface.c.o
+[65/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_vout_overlay_android_mediacodec.c.o
+[66/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/dummy/ijksdl_vout_dummy.c.o
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec_java.c:207:50: warning: comparison of unsigned expression < 0 is always false [-Wtautological-unsigned-zero-compare]
+    if (J4A_ExceptionCheck__catchAll(env) || idx < 0 || idx >= buffer_count) {
+                                             ~~~ ^ ~
+1 warning generated.
+[67/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ffmpeg/abi_all/image_convert.c.o
+[68/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c.o
+[69/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/color.c.o
+[70/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/common.c.o
+[71/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/rgb.fsh.c.o
+[72/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/yuv420p.fsh.c.o
+[73/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/yuv420sp.fsh.c.o
+[74/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/yuv444p10le.fsh.c.o
+[75/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer.c.o
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:526:11: warning: 'avcodec_encode_video2' is deprecated [-Wdeprecated-declarations]
+    ret = avcodec_encode_video2(img_info->frame_img_codec_ctx, &avpkt, dst_frame, &got_packet);
+          ^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavcodec/avcodec.h:5508:1: note: 'avcodec_encode_video2' has been explicitly marked deprecated here
+attribute_deprecated
+^
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1116:10: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!isnan(slave_clock) && (isnan(clock) || fabs(clock - slave_clock) > AV_NOSYNC_THRESHOLD))
+         ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1265:14: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+        if (!isnan(diff) && fabs(diff) < AV_NOSYNC_THRESHOLD) {
+             ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1290:13: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+        if (isnan(duration) || duration <= 0 || duration > is->max_frame_duration)
+            ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1354:17: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+            if (isnan(is->frame_timer) || time < is->frame_timer)
+                ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1525:14: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+        if (!isnan(pts)) {
+             ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1709:22: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+                if (!isnan(diff) && fabs(diff) < AV_NOSYNC_THRESHOLD &&
+                     ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2009:26: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+                    if (!isnan(frame_pts)) {
+                         ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2421:14: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+        if (!isnan(diff) && fabs(diff) < AV_NOSYNC_THRESHOLD) {
+             ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2607:10: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!isnan(af->pts))
+         ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2696:10: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!isnan(is->audio_clock)) {
+         ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4434:9: warning: implicit declaration of function 'isnanf' is invalid in C99 [-Wimplicit-function-declaration]
+    if (isnan(pos_clock)) {
+        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:95:41: note: expanded from macro 'isnan'
+#define isnan(x) (isnan((double)(x)) || isnanf((float)(x)))
+                                        ^
+12 warnings generated.
+[76/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_rgb.c.o
+[77/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_yuv420p.c.o
+[78/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_yuv420sp.c.o
+[79/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_yuv444p10le.c.o
+[80/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/shader.c.o
+[81/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/vsh/mvp.vsh.c.o
+[82/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_aout.c.o
+[83/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_audio.c.o
+[84/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_egl.c.o
+[85/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_error.c.o
+[86/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_extra_log.c.o
+[87/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_mutex.c.o
+[88/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_stdinc.c.o
+[89/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_thread.c.o
+[90/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_timer.c.o
+[91/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_vout.c.o
+[92/153] Building C object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/util/cpuid.c.o
+[93/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare.cc.o
+[94/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_common.cc.o
+[95/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_neon.cc.o
+[96/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_neon64.cc.o
+[97/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_posix.cc.o
+[98/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_win.cc.o
+[99/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert.cc.o
+[100/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_argb.cc.o
+[101/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_from.cc.o
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ijksdl_egl.c:107:22: warning: implicit declaration of function 'ANativeWindow_getFormat' is invalid in C99 [-Wimplicit-function-declaration]
+        int format = ANativeWindow_getFormat(egl->window);
+                     ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ijksdl_egl.c:111:19: warning: implicit declaration of function 'ANativeWindow_setBuffersGeometry' is invalid in C99 [-Wimplicit-function-declaration]
+        int ret = ANativeWindow_setBuffersGeometry(egl->window, width, height, format);
+                  ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ijksdl_egl.c:196:26: warning: implicit declaration of function 'ANativeWindow_getWidth' is invalid in C99 [-Wimplicit-function-declaration]
+        int32_t width  = ANativeWindow_getWidth(window);
+                         ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ijksdl_egl.c:199:19: warning: implicit declaration of function 'ANativeWindow_setBuffersGeometry' is invalid in C99 [-Wimplicit-function-declaration]
+        int ret = ANativeWindow_setBuffersGeometry(window, width, height, native_visual_id);
+                  ^
+4 warnings generated.
+[102/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_from_argb.cc.o
+[103/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_jpeg.cc.o
+[104/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_to_argb.cc.o
+[105/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_to_i420.cc.o
+[106/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/cpu_id.cc.o
+[107/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/format_conversion.cc.o
+[108/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/mjpeg_decoder.cc.o
+[109/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/mjpeg_validate.cc.o
+[110/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/planar_functions.cc.o
+[111/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate.cc.o
+[112/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_argb.cc.o
+[113/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_mips.cc.o
+[114/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_neon.cc.o
+[115/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_neon64.cc.o
+[116/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_any.cc.o
+[117/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_common.cc.o
+[118/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_mips.cc.o
+[119/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_neon.cc.o
+[120/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_neon64.cc.o
+[121/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_posix.cc.o
+[122/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_win.cc.o
+[123/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale.cc.o
+[124/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_argb.cc.o
+[125/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_common.cc.o
+[126/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_mips.cc.o
+[127/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_neon.cc.o
+[128/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_neon64.cc.o
+[129/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_posix.cc.o
+[130/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_win.cc.o
+[131/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/video_common.cc.o
+[132/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/util/psnr.cc.o
+[133/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/util/ssim.cc.o
+[134/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkstl.cpp.o
+[135/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/ijksoundtouch_wrap.cpp.o
+[136/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/Android-lib/jni/soundtouch-jni.cpp.o
+[137/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundStretch/RunParameters.cpp.o
+[138/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundStretch/WavFile.cpp.o
+[139/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/AAFilter.cpp.o
+[140/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/BPMDetect.cpp.o
+[141/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/cpu_detect_x86.cpp.o
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/cpu_detect_x86.cpp:56:12: warning: 'bit_MMX' macro redefined [-Wmacro-redefined]
+   #define bit_MMX     (1 << 23)
+           ^
+/Users/chencancan/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include/cpuid.h:140:9: note: previous definition is here
+#define bit_MMX         0x00800000
+        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/cpu_detect_x86.cpp:57:12: warning: 'bit_SSE' macro redefined [-Wmacro-redefined]
+   #define bit_SSE     (1 << 25)
+           ^
+/Users/chencancan/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include/cpuid.h:143:9: note: previous definition is here
+#define bit_SSE         0x02000000
+        ^
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/cpu_detect_x86.cpp:58:12: warning: 'bit_SSE2' macro redefined [-Wmacro-redefined]
+   #define bit_SSE2    (1 << 26)
+           ^
+/Users/chencancan/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include/cpuid.h:144:9: note: previous definition is here
+#define bit_SSE2        0x04000000
+        ^
+3 warnings generated.
+[142/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/FIFOSampleBuffer.cpp.o
+[143/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/FIRFilter.cpp.o
+[144/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/InterpolateCubic.cpp.o
+[145/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/InterpolateLinear.cpp.o
+[146/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/InterpolateShannon.cpp.o
+[147/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/mmx_optimized.cpp.o
+[148/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/PeakFinder.cpp.o
+[149/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/RateTransposer.cpp.o
+[150/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/SoundTouch.cpp.o
+[151/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/sse_optimized.cpp.o
+[152/153] Building CXX object CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/TDStretch.cpp.o
+[153/153] Linking CXX shared library ../../../../build/intermediates/cmake/debug/obj/x86/libijkplayer.so
+FAILED: : && /Users/chencancan/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++  --target=i686-none-linux-android --gcc-toolchain=/Users/chencancan/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/chencancan/sdk/ndk-bundle/sysroot -fPIC -isystem /Users/chencancan/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=gnu++11 -std=c++98  -DWEBRTC_POSIX -DNMDEBUG -D__STDC_CONSTANT_MACROS -DUSR_DEF_ENABLE_CONVERTER=1 -DUSR_CODEC_DEBUG=0 -DTESR_RUNTIME_COST=0 -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot /Users/chencancan/sdk/ndk-bundle/platforms/android-16/arch-x86 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -L/Users/chencancan/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86 -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -shared -Wl,-soname,libijkplayer.so -o ../../../../build/intermediates/cmake/debug/obj/x86/libijkplayer.so CMakeFiles/ijkplayer.dir/src/main/cpp/android-ndk-prof/prof.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/AudioTrack.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/MediaCodec.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/MediaFormat.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/media/PlaybackParams.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/os/Build.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/android/os/Bundle.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/java/nio/Buffer.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/java/nio/ByteBuffer.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/java/util/ArrayList.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/tv/danmaku/ijk/media/player/IjkMediaPlayer.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/tv/danmaku/ijk/media/player/misc/IAndroidIO.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/class/tv/danmaku/ijk/media/player/misc/IMediaDataSource.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/j4a_allclasses.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4a/j4a_base.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4au/class/android/media/AudioTrack.util.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkj4a/j4au/class/java/nio/ByteBuffer.util.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/ffmpeg_api_jni.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/ijkplayer_android.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/ijkplayer_jni.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipeline_android.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_ffpipeline.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_ffpipenode.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkio.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioandroidio.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioapplication.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioffio.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioprotocol.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklongurl.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkmediadatasource.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijksegment.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkdict.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkfifo.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkthreadpool.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijktree.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkutils.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkmeta.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkplayer.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/pipeline/ffpipeline_ffplay.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/pipeline/ffpipenode_ffplay_vdec.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/android_audiotrack.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/android_nativewindow.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_android_jni.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_aout_android_audiotrack.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_aout_android_opensles.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec_dummy.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec_internal.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediacodec_java.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediadef.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediaformat.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_codec_android_mediaformat_java.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_vout_android_nativewindow.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_vout_android_surface.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/android/ijksdl_vout_overlay_android_mediacodec.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/dummy/ijksdl_vout_dummy.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ffmpeg/abi_all/image_convert.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/color.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/common.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/rgb.fsh.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/yuv420p.fsh.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/yuv420sp.fsh.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/fsh/yuv444p10le.fsh.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_rgb.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_yuv420p.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_yuv420sp.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/renderer_yuv444p10le.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/shader.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/gles2/vsh/mvp.vsh.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_aout.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_audio.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_egl.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_error.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_extra_log.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_mutex.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_stdinc.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_thread.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_timer.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksdl/ijksdl_vout.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/util/cpuid.c.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_common.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_neon.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_neon64.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_posix.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/compare_win.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_argb.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_from.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_from_argb.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_jpeg.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_to_argb.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/convert_to_i420.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/cpu_id.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/format_conversion.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/mjpeg_decoder.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/mjpeg_validate.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/planar_functions.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_argb.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_mips.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_neon.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/rotate_neon64.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_any.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_common.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_mips.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_neon.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_neon64.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_posix.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/row_win.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_argb.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_common.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_mips.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_neon.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_neon64.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_posix.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/scale_win.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/source/video_common.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/util/psnr.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkyuv/util/ssim.cc.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavutil/ijkstl.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/ijksoundtouch_wrap.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/Android-lib/jni/soundtouch-jni.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundStretch/RunParameters.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundStretch/WavFile.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/AAFilter.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/BPMDetect.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/cpu_detect_x86.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/FIFOSampleBuffer.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/FIRFilter.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/InterpolateCubic.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/InterpolateLinear.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/InterpolateShannon.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/mmx_optimized.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/PeakFinder.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/RateTransposer.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/SoundTouch.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/sse_optimized.cpp.o CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijksoundtouch/source/SoundTouch/TDStretch.cpp.o -L/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/../../contrib/build/ffmpeg-armv7a/output -llog -landroid -lEGL -lGLESv2 -lGLESv1_CM -lOpenSLES -ldl -lz -lijkffmpeg -latomic -lm "/Users/chencancan/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libc++_static.a" "/Users/chencancan/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libc++abi.a" "/Users/chencancan/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libandroid_support.a" && :
+/Users/chencancan/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld: warning: skipping incompatible /Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/../../contrib/build/ffmpeg-armv7a/output/libijkffmpeg.so while searching for ijkffmpeg
+/Users/chencancan/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld: error: cannot find -lijkffmpeg
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/ffmpeg_api_jni.c:61: error: undefined reference to 'av_base64_encode'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1705: error: undefined reference to 'avcodec_parameters_from_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1880: error: undefined reference to 'avcodec_parameters_alloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1437: error: undefined reference to 'avcodec_parameters_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1524: error: undefined reference to 'av_guess_frame_rate'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1534: error: undefined reference to 'av_frame_alloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1544: error: undefined reference to 'av_frame_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1575: error: undefined reference to 'av_guess_frame_rate'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1588: error: undefined reference to 'av_frame_alloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1637: error: undefined reference to 'av_frame_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1643: error: undefined reference to 'av_frame_get_pkt_pos'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1648: error: undefined reference to 'av_frame_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1653: error: undefined reference to 'av_frame_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1935: error: undefined reference to 'avcodec_parameters_alloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1939: error: undefined reference to 'avcodec_parameters_from_context'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffmsg_queue.h:79: error: undefined reference to 'av_malloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1496: error: undefined reference to 'av_frame_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1502: error: undefined reference to 'av_frame_get_pkt_pos'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1507: error: undefined reference to 'av_frame_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:509: error: undefined reference to 'av_packet_split_side_data'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:510: error: undefined reference to 'av_packet_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:519: error: undefined reference to 'av_packet_get_side_data'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:523: error: undefined reference to 'av_frame_alloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:526: error: undefined reference to 'avcodec_alloc_context3'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:532: error: undefined reference to 'avcodec_parameters_to_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:533: error: undefined reference to 'av_freep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:534: error: undefined reference to 'av_mallocz'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:536: error: undefined reference to 'avcodec_free_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:542: error: undefined reference to 'av_dict_set'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:543: error: undefined reference to 'avcodec_open2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:544: error: undefined reference to 'av_dict_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:546: error: undefined reference to 'avcodec_free_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:550: error: undefined reference to 'avcodec_decode_video2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:552: error: undefined reference to 'avcodec_free_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:558: error: undefined reference to 'avcodec_parameters_from_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:565: error: undefined reference to 'avcodec_free_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:575: error: undefined reference to 'av_rescale_q'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:659: error: undefined reference to 'av_rescale_q'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:1055: error: undefined reference to 'av_rescale_q'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:442: error: undefined reference to 'av_rescale_q'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:757: error: undefined reference to 'av_packet_split_side_data'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:758: error: undefined reference to 'av_packet_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:767: error: undefined reference to 'av_packet_get_side_data'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:771: error: undefined reference to 'av_frame_alloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:774: error: undefined reference to 'avcodec_alloc_context3'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:779: error: undefined reference to 'avcodec_parameters_to_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:780: error: undefined reference to 'av_freep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:781: error: undefined reference to 'av_mallocz'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:789: error: undefined reference to 'av_dict_set'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:790: error: undefined reference to 'avcodec_open2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:791: error: undefined reference to 'av_dict_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:797: error: undefined reference to 'avcodec_decode_video2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/android/pipeline/ffpipenode_android_mediacodec_vdec.c:805: error: undefined reference to 'avcodec_parameters_from_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:78: error: undefined reference to 'av_strerror'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:80: error: undefined reference to 'av_log'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:136: error: undefined reference to 'avcodec_get_class'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:139: error: undefined reference to 'avcodec_find_encoder'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:140: error: undefined reference to 'avcodec_find_decoder'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:159: error: undefined reference to 'av_dict_get'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:170: error: undefined reference to 'av_opt_find'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:172: error: undefined reference to 'av_opt_find'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:174: error: undefined reference to 'av_dict_set'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:176: error: undefined reference to 'av_opt_find'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:178: error: undefined reference to 'av_dict_set'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:122: error: undefined reference to 'avformat_match_stream_specifier'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:124: error: undefined reference to 'av_log'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:194: error: undefined reference to 'av_mallocz'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:196: error: undefined reference to 'av_log'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:209: error: undefined reference to 'av_log'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:213: error: undefined reference to 'av_realloc_array'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:227: error: undefined reference to 'av_dict_get'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:228: error: undefined reference to 'av_stream_get_side_data'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:234: error: undefined reference to 'av_strtod'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_cmdutils.c:239: error: undefined reference to 'av_display_rotation_get'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3872: error: undefined reference to 'avcodec_register_all'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3879: error: undefined reference to 'av_register_all'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3883: error: undefined reference to 'avformat_network_init'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3885: error: undefined reference to 'av_lockmgr_register'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3886: error: undefined reference to 'av_log_set_callback'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3888: error: undefined reference to 'av_init_packet'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3838: error: undefined reference to 'av_log_get_level'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3899: error: undefined reference to 'av_lockmgr_register'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3903: error: undefined reference to 'avformat_network_deinit'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3911: error: undefined reference to 'av_log_set_callback'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3913: error: undefined reference to 'av_log_set_callback'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3847: error: undefined reference to 'av_log_get_level'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3858: error: undefined reference to 'av_log_format_line'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3920: error: undefined reference to 'av_log_set_level'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3980: error: undefined reference to 'av_version_info'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3983: error: undefined reference to 'av_mallocz'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3995: error: undefined reference to 'av_opt_set_defaults'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffplay_def.h:731: error: undefined reference to 'av_opt_free'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffplay_def.h:734: error: undefined reference to 'av_dict_free'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffplay_def.h:735: error: undefined reference to 'av_dict_free'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffplay_def.h:742: error: undefined reference to 'av_freep'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffplay_def.h:762: error: undefined reference to 'av_freep'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffplay_def.h:847: error: undefined reference to 'av_application_closep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4024: error: undefined reference to 'av_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1014: error: undefined reference to 'avformat_close_input'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1033: error: undefined reference to 'sws_freeContext'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1046: error: undefined reference to 'sws_freeContext'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1054: error: undefined reference to 'av_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1055: error: undefined reference to 'av_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4106: error: undefined reference to 'av_strdup'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4172: error: undefined reference to 'av_dict_set_int'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4149: error: undefined reference to 'av_application_closep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4150: error: undefined reference to 'av_application_open'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4255: error: undefined reference to 'av_stristart'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4256: error: undefined reference to 'av_stristart'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4265: error: undefined reference to 'avio_find_protocol_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4273: error: undefined reference to 'av_version_info'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4274: error: undefined reference to 'avutil_version'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4275: error: undefined reference to 'avcodec_version'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4276: error: undefined reference to 'avformat_version'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4277: error: undefined reference to 'swscale_version'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4278: error: undefined reference to 'swresample_version'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4287: error: undefined reference to 'av_opt_set_dict'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4308: error: undefined reference to 'av_strdup'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4229: error: undefined reference to 'av_dict_get'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3647: error: undefined reference to 'av_strdup'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4396: error: undefined reference to 'av_rescale'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4397: error: undefined reference to 'av_rescale'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4462: error: undefined reference to 'av_rescale'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4430: error: undefined reference to 'av_rescale'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:240: error: undefined reference to 'av_packet_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:355: error: undefined reference to 'av_packet_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1530: error: undefined reference to 'av_gettime_relative'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1549: error: undefined reference to 'av_usleep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1551: error: undefined reference to 'av_gettime_relative'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2184: error: undefined reference to 'av_guess_frame_rate'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2334: error: undefined reference to 'av_frame_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4763: error: undefined reference to 'av_asprintf'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4770: error: undefined reference to 'av_asprintf'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:4777: error: undefined reference to 'av_asprintf'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:951: error: undefined reference to 'swr_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2823: error: undefined reference to 'avcodec_alloc_context3'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2827: error: undefined reference to 'avcodec_parameters_to_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2830: error: undefined reference to 'av_codec_set_pkt_timebase'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2832: error: undefined reference to 'avcodec_find_decoder'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2841: error: undefined reference to 'avcodec_find_decoder_by_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2852: error: undefined reference to 'av_codec_get_max_lowres'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2854: error: undefined reference to 'av_codec_get_max_lowres'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2855: error: undefined reference to 'av_codec_get_max_lowres'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2857: error: undefined reference to 'av_codec_set_lowres'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2870: error: undefined reference to 'av_dict_get'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2873: error: undefined reference to 'av_dict_set_int'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2876: error: undefined reference to 'avcodec_open2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2920: error: undefined reference to 'avcodec_get_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3009: error: undefined reference to 'avcodec_get_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:697: error: undefined reference to 'av_frame_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:667: error: undefined reference to 'avsubtitle_free'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffmsg_queue.h:79: error: undefined reference to 'av_malloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3765: error: undefined reference to 'av_usleep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3093: error: undefined reference to 'avformat_alloc_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3105: error: undefined reference to 'av_stristart'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3106: error: undefined reference to 'av_stristart'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3113: error: undefined reference to 'av_dict_set_int'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3114: error: undefined reference to 'av_dict_set_int'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3118: error: undefined reference to 'av_find_input_format'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3119: error: undefined reference to 'avformat_open_input'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3142: error: undefined reference to 'av_format_inject_global_side_data'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3166: error: undefined reference to 'avformat_find_stream_info'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3204: error: undefined reference to 'avformat_seek_file'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3213: error: undefined reference to 'av_dump_format'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3223: error: undefined reference to 'avformat_match_stream_specifier'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3244: error: undefined reference to 'av_find_best_stream'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3248: error: undefined reference to 'av_find_best_stream'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3254: error: undefined reference to 'av_find_best_stream'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3377: error: undefined reference to 'avformat_seek_file'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3407: error: undefined reference to 'av_gettime'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3451: error: undefined reference to 'av_packet_ref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3515: error: undefined reference to 'av_read_frame'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3519: error: undefined reference to 'avio_feof'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:3628: error: undefined reference to 'avformat_close_input'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1094: error: undefined reference to 'av_gettime_relative'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1318: error: undefined reference to 'av_gettime_relative'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:921: error: undefined reference to 'av_gettime'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffmsg_queue.h:159: error: undefined reference to 'av_malloc'
+../../../../src/main/cpp/ijkmedia/ijkplayer/ff_ffmsg_queue.h:149: error: undefined reference to 'av_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:208: error: undefined reference to 'av_init_packet'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:159: error: undefined reference to 'av_malloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:1703: error: undefined reference to 'av_guess_sample_aspect_ratio'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:406: error: undefined reference to 'av_reduce'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:434: error: undefined reference to 'av_init_packet'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:439: error: undefined reference to 'sws_getContext'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:458: error: undefined reference to 'avcodec_find_encoder'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:464: error: undefined reference to 'avcodec_alloc_context3'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:477: error: undefined reference to 'avcodec_open2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:486: error: undefined reference to 'av_image_get_buffer_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:498: error: undefined reference to 'av_image_fill_arrays'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:512: error: undefined reference to 'sws_scale'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:526: error: undefined reference to 'avcodec_encode_video2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:579: error: undefined reference to 'avcodec_receive_frame'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:590: error: undefined reference to 'avcodec_receive_frame'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:594: error: undefined reference to 'av_codec_get_pkt_timebase'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:608: error: undefined reference to 'avcodec_flush_buffers'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:620: error: undefined reference to 'av_packet_move_ref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:629: error: undefined reference to 'avcodec_flush_buffers'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:636: error: undefined reference to 'avcodec_decode_subtitle2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:642: error: undefined reference to 'av_packet_move_ref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:647: error: undefined reference to 'avcodec_send_packet'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:650: error: undefined reference to 'av_packet_move_ref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2739: error: undefined reference to 'av_get_default_channel_layout'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2741: error: undefined reference to 'av_get_channel_layout_nb_channels'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2742: error: undefined reference to 'av_get_default_channel_layout'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2745: error: undefined reference to 'av_get_channel_layout_nb_channels'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2756: error: undefined reference to 'av_log2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2756: error: undefined reference to 'av_log2'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2775: error: undefined reference to 'av_get_default_channel_layout'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2783: error: undefined reference to 'av_get_default_channel_layout'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2795: error: undefined reference to 'av_samples_get_buffer_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2796: error: undefined reference to 'av_samples_get_buffer_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2033: error: undefined reference to 'av_usleep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2144: error: undefined reference to 'av_frame_move_ref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2501: error: undefined reference to 'av_samples_get_buffer_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2506: error: undefined reference to 'av_get_channel_layout_nb_channels'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2515: error: undefined reference to 'swr_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2516: error: undefined reference to 'swr_alloc_set_opts'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2523: error: undefined reference to 'av_get_sample_fmt_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2524: error: undefined reference to 'av_get_sample_fmt_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2527: error: undefined reference to 'av_dict_copy'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2529: error: undefined reference to 'av_opt_set_double'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2530: error: undefined reference to 'av_opt_set_dict'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2533: error: undefined reference to 'swr_init'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2536: error: undefined reference to 'av_get_sample_fmt_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2537: error: undefined reference to 'av_get_sample_fmt_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2538: error: undefined reference to 'swr_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2551: error: undefined reference to 'av_samples_get_buffer_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2558: error: undefined reference to 'swr_set_compensation'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2564: error: undefined reference to 'av_fast_malloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2568: error: undefined reference to 'swr_convert'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2575: error: undefined reference to 'swr_init'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2576: error: undefined reference to 'swr_free'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2579: error: undefined reference to 'av_get_bytes_per_sample'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ff_ffplay.c:2583: error: undefined reference to 'av_fast_malloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:74: error: undefined reference to 'av_register_all'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:79: error: undefined reference to 'ijkav_register_ijkmediadatasource_protocol'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:81: error: undefined reference to 'ijkav_register_ijkio_protocol'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:82: error: undefined reference to 'ijkav_register_async_protocol'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:83: error: undefined reference to 'ijkav_register_ijklongurl_protocol'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:84: error: undefined reference to 'ijkav_register_ijktcphook_protocol'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:85: error: undefined reference to 'ijkav_register_ijkhttphook_protocol'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:86: error: undefined reference to 'ijkav_register_ijksegment_protocol'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:61: error: undefined reference to 'av_register_input_format'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/allformats.c:46: error: undefined reference to 'av_iformat_next'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:304: error: undefined reference to 'av_strstart'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:316: error: undefined reference to 'ffurl_open_whitelist'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:322: error: undefined reference to 'ffurl_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:358: error: undefined reference to 'ffurl_close'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:382: error: undefined reference to 'ffurl_close'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:166: error: undefined reference to 'ff_check_interrupt'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:94: error: undefined reference to 'av_fifo_alloc'
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavutil/error.h:111: error: undefined reference to 'av_strerror'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:237: error: undefined reference to 'ffurl_seek'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:104: error: undefined reference to 'av_fifo_freep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:109: error: undefined reference to 'av_fifo_reset'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:120: error: undefined reference to 'av_fifo_space'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:142: error: undefined reference to 'av_fifo_generic_write'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:178: error: undefined reference to 'ffurl_read'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:209: error: undefined reference to 'av_application_on_async_read_speed'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:194: error: undefined reference to 'av_application_on_async_statistic'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:115: error: undefined reference to 'av_fifo_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:128: error: undefined reference to 'av_fifo_generic_peek_at'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c:132: error: undefined reference to 'av_fifo_drain'
+CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkasync.c.o:ijkasync.c:async_context_class: error: undefined reference to 'av_default_item_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkio.c:60: error: undefined reference to 'av_strstart'
+CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkio.c.o:ijkio.c:ijkio_context_class: error: undefined reference to 'av_default_item_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioandroidio.c:52: error: undefined reference to 'av_strstart'
+../../../../../../contrib/build/ffmpeg-armv7a/output/include/libavutil/error.h:111: error: undefined reference to 'av_strerror'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioffio.c:54: error: undefined reference to 'av_strstart'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioffio.c:56: error: undefined reference to 'ffurl_open_whitelist'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioffio.c:75: error: undefined reference to 'ffurl_read'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioffio.c:87: error: undefined reference to 'ffurl_seek'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkioffio.c:99: error: undefined reference to 'ffurl_close'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c:89: error: undefined reference to 'av_application_on_io_control'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:208: error: undefined reference to 'av_dict_copy'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:249: error: undefined reference to 'av_read_frame'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:278: error: undefined reference to 'av_read_frame'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:87: error: undefined reference to 'avformat_close_input'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:51: error: undefined reference to 'ff_check_interrupt'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:59: error: undefined reference to 'av_application_on_io_control'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:66: error: undefined reference to 'ff_check_interrupt'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:134: error: undefined reference to 'avformat_alloc_context'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:141: error: undefined reference to 'av_dict_copy'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:158: error: undefined reference to 'avformat_open_input'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:162: error: undefined reference to 'avformat_find_stream_info'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:167: error: undefined reference to 'avformat_new_stream'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:178: error: undefined reference to 'avformat_close_input'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:104: error: undefined reference to 'ff_alloc_extradata'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:113: error: undefined reference to 'avcodec_parameters_copy'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c:120: error: undefined reference to 'av_dict_copy'
+CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c.o:ijklivehook.c:ijklivehook_class: error: undefined reference to 'av_default_item_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklongurl.c:44: error: undefined reference to 'ffurl_open_whitelist'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklongurl.c:65: error: undefined reference to 'ffurl_read'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklongurl.c:72: error: undefined reference to 'ffurl_seek'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklongurl.c:58: error: undefined reference to 'ffurl_close'
+CMakeFiles/ijkplayer.dir/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijklongurl.c.o:ijklongurl.c:ijklongurl_context_class: error: undefined reference to 'av_default_item_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijksegment.c:62: error: undefined reference to 'av_application_on_io_control'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijksegment.c:71: error: undefined reference to 'ffurl_open_whitelist'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijksegment.c:98: error: undefined reference to 'ffurl_read'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijksegment.c:105: error: undefined reference to 'ffurl_seek'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c:215: error: undefined reference to 'ffurl_write'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c:185: error: undefined reference to 'ffurl_closep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c:116: error: undefined reference to 'ffurl_closep'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c:58: error: undefined reference to 'ff_check_interrupt'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c:68: error: undefined reference to 'av_application_on_io_control'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkmeta.c:208: error: undefined reference to 'avcodec_get_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkmeta.c:212: error: undefined reference to 'avcodec_find_decoder'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkmeta.c:215: error: undefined reference to 'av_get_profile_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkmeta.c:222: error: undefined reference to 'av_get_pix_fmt_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/ijkmeta.c:167: error: undefined reference to 'av_get_bits_per_sample'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijkplayer/pipeline/ffpipenode_ffplay_vdec.c:56: error: undefined reference to 'avcodec_get_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/android/android_nativewindow.c:78: error: undefined reference to 'av_image_copy_plane'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/android/android_nativewindow.c:122: error: undefined reference to 'av_image_copy_plane'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:119: error: undefined reference to 'sws_freeContext'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:130: error: undefined reference to 'av_buffer_unref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:214: error: undefined reference to 'av_frame_ref'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:258: error: undefined reference to 'sws_getCachedContext'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:266: error: undefined reference to 'sws_scale'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:271: error: undefined reference to 'av_get_pix_fmt_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:271: error: undefined reference to 'av_get_pix_fmt_name'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:85: error: undefined reference to 'av_image_fill_arrays'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:98: error: undefined reference to 'av_image_get_buffer_size'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:99: error: undefined reference to 'av_buffer_alloc'
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/src/main/cpp/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c:103: error: undefined reference to 'av_image_fill_arrays'
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.

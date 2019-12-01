@@ -1,0 +1,3 @@
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/ijkplayer.dir

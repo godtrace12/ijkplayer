@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/chencancan/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/release/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "ijkplayer-Release-arm64-v8a": {
+      "artifactName": "ijkplayer",
+      "buildCommand": "/Users/chencancan/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/release/arm64-v8a --target ijkplayer",
+      "abi": "arm64-v8a",
+      "output": "/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/build/intermediates/cmake/release/obj/arm64-v8a/libijkplayer.so"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+Executable : /Users/daijun/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib
+-B/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/release/armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-16
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/build/intermediates/cmake/release/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Release
+-DANDROID_NDK=/Users/daijun/Library/Android/sdk/ndk-bundle
+-DCMAKE_CXX_FLAGS=-frtti -fexceptions -std=gnu++11 -std=c++98  -DWEBRTC_POSIX -DNMDEBUG -D__STDC_CONSTANT_MACROS -DUSR_DEF_ENABLE_CONVERTER=1 -DUSR_CODEC_DEBUG=0 -DTESR_RUNTIME_COST=0
+-DCMAKE_TOOLCHAIN_FILE=/Users/daijun/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/daijun/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

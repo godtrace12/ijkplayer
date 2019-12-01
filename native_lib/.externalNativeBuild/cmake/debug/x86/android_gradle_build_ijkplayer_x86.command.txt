@@ -1,0 +1,8 @@
+Executable : /Users/chencancan/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+--build
+/Users/chencancan/Desktop/chenguo/cg/ijkplayer/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/debug/x86
+--target
+ijkplayer
+jvmArgs : 
+

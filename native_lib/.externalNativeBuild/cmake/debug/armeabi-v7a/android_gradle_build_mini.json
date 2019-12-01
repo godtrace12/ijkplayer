@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/daijun/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "ijkplayer-Debug-armeabi-v7a": {
+      "artifactName": "ijkplayer",
+      "buildCommand": "/Users/daijun/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/.externalNativeBuild/cmake/debug/armeabi-v7a --target ijkplayer",
+      "abi": "armeabi-v7a",
+      "output": "/Users/daijun/Documents/dj_code/ijk-files/ijkplayer-android2/ijkplayer-android/android/ijkplayer/native_lib/build/intermediates/cmake/debug/obj/armeabi-v7a/libijkplayer.so"
+    }
+  }
+}
