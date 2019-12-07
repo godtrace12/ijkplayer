@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/svPlayBackWindow"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="center_vertical"/>
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放"/>
+    <Button
+        android:id="@+id/btnSoundOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="声音关"/>
+    <Button
+        android:id="@+id/btnSoundOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="声音开"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="截图"/>
+
+        <Button
+            android:id="@+id/btnRecordStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录像开始"/>
+
+        <Button
+            android:id="@+id/btnRecordStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录像停止"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSpeed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2倍速"/>
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

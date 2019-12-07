@@ -18,6 +18,7 @@
 package tv.danmaku.ijk.media.exo;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.view.Surface;
 import android.view.SurfaceHolder;
@@ -73,6 +74,11 @@ public class IjkExoMediaPlayer extends AbstractMediaPlayer {
         mSurface = surface;
         if (mInternalPlayer != null)
             mInternalPlayer.setSurface(surface);
+    }
+
+    @Override
+    public boolean doCapture(Bitmap bitmap) {
+        return false;
     }
 
     @Override

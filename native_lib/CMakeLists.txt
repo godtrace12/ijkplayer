@@ -276,6 +276,8 @@ find_library( z-lib z)
 
 target_link_libraries( # Specifies the target library.
         ijkplayer
+        # modified by dj    to make sure AndroidBitmap_lockPixels  can be linked in
+        jnigraphics
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib}

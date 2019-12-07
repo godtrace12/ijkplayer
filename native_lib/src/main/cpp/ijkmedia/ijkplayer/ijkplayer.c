@@ -796,3 +796,16 @@ int ijkmp_get_msg(IjkMediaPlayer *mp, AVMessage *msg, int block)
 
     return -1;
 }
+
+static void ijkmp_get_current_frame_l(IjkMediaPlayer *mp, uint8_t *frame_buf)
+{
+    ffp_get_current_frame_l(mp->ffplayer, frame_buf);
+}
+
+void ijkmp_get_current_frame(IjkMediaPlayer *mp, uint8_t *frame_buf)
+{
+    assert(mp);
+    pthread_mutex_lock(&mp->mutex);
+    ijkmp_get_current_frame_l(mp, frame_buf);
+    pthread_mutex_unlock(&mp->mutex);
+}

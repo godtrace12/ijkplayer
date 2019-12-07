@@ -18,6 +18,7 @@
 package tv.danmaku.ijk.media.player;
 
 import android.annotation.TargetApi;
+import android.graphics.Bitmap;
 import android.graphics.SurfaceTexture;
 import android.os.Build;
 import android.view.Surface;
@@ -96,5 +97,10 @@ public class TextureMediaPlayer extends MediaPlayerProxy implements IMediaPlayer
     @Override
     public void setSurfaceTextureHost(ISurfaceTextureHost surfaceTextureHost) {
         mSurfaceTextureHost = surfaceTextureHost;
+    }
+
+    @Override
+    public boolean doCapture(Bitmap bitmap) {
+        return false;
     }
 }
