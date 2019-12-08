@@ -342,4 +342,9 @@ public class MediaPlayerProxy implements IMediaPlayer {
     public boolean doCapture(Bitmap bitmap) {
         return false;
     }
+
+    @Override
+    public void doStartRecord(String recordVideoPath) {
+
+    }
 }

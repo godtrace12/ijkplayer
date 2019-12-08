@@ -82,6 +82,11 @@ public class IjkExoMediaPlayer extends AbstractMediaPlayer {
     }
 
     @Override
+    public void doStartRecord(String recordVideoPath) {
+
+    }
+
+    @Override
     public void setDataSource(Context context, Uri uri) {
         mDataSource = uri.toString();
         mRendererBuilder = getRendererBuilder();

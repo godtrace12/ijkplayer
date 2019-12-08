@@ -38,6 +38,20 @@
 #ComputeSumSquareError
 #ADD_DEFINITIONS(-DHAVE_JPEG)
 
+# modified by dj add c++11 support
+include(CheckCXXCompilerFlag)
+CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+if(COMPILER_SUPPORTS_CXX11)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+elseif(COMPILER_SUPPORTS_CXX0X)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
+else()
+    message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
+
+endif()
+
+
 set(CMAKE_BUILD_TYPE Debug CACHE STRING "set build type to debug")
 
 set(BASE_JNI_DIR
@@ -133,6 +147,7 @@ set( SRC_FILES
         ${BASE_JNI_DIR}/ijkmedia/ijkplayer/ijkplayer.c
         ${BASE_JNI_DIR}/ijkmedia/ijkplayer/pipeline/ffpipeline_ffplay.c
         ${BASE_JNI_DIR}/ijkmedia/ijkplayer/pipeline/ffpipenode_ffplay_vdec.c
+        ${BASE_JNI_DIR}/ijkmedia/ijkplayer/dj_record.cpp
         ${BASE_JNI_DIR}/ijkmedia/ijksdl/android/android_audiotrack.c
         ${BASE_JNI_DIR}/ijkmedia/ijksdl/android/android_nativewindow.c
         ${BASE_JNI_DIR}/ijkmedia/ijksdl/android/ijksdl_android_jni.c

@@ -1157,6 +1157,11 @@ IjkMediaPlayer_getCurrentFrame(JNIEnv *env, jobject thiz, jobject bitmap)
     return retval;
 }
 
+static void IjkMediaPlayer_startRecord(JNIEnv* env,jobject thiz,jstring recordFilePath){
+    IjkMediaPlayer *mp = jni_get_media_player(env, thiz);
+    ijkmp_start_record(mp);
+}
+
 
 
 
@@ -1211,6 +1216,7 @@ static JNINativeMethod g_methods[] = {
     { "native_setLogLevel",     "(I)V",                     (void *) IjkMediaPlayer_native_setLogLevel },
     { "_setFrameAtTime",        "(Ljava/lang/String;JJII)V", (void *) IjkMediaPlayer_setFrameAtTime },
     { "getCurrentFrame",        "(Landroid/graphics/Bitmap;)Z",      (void *) IjkMediaPlayer_getCurrentFrame },
+    { "startRecord",            "(Ljava/lang/String;)I",      (void *) IjkMediaPlayer_startRecord },
 };
 
 JNIEXPORT jint JNI_OnLoad(JavaVM *vm, void *reserved)

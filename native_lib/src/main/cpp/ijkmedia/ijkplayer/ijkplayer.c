@@ -809,3 +809,9 @@ void ijkmp_get_current_frame(IjkMediaPlayer *mp, uint8_t *frame_buf)
     ijkmp_get_current_frame_l(mp, frame_buf);
     pthread_mutex_unlock(&mp->mutex);
 }
+
+void ijkmp_start_record(IjkMediaPlayer *mp){
+    MPTRACE("ijkmp_start_record: dj prepare to start record\n");
+    //原有实现得修改，去除c++ vector，改为纯数组或指针再调用
+//    test_func();
+}

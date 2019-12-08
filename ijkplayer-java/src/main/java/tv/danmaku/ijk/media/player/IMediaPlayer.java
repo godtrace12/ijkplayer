@@ -215,4 +215,6 @@ public interface IMediaPlayer {
     void setDataSource(IMediaDataSource mediaDataSource);
 
     boolean doCapture(Bitmap bitmap);
+
+    void doStartRecord(String recordVideoPath);
 }
