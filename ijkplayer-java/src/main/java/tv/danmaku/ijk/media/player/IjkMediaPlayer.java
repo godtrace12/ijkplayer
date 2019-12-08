@@ -1287,7 +1287,7 @@ public final class IjkMediaPlayer extends AbstractMediaPlayer {
     public static native void native_setLogLevel(int level);
 
     public native boolean getCurrentFrame(Bitmap bitmap);
-    public native void startRecord(String recordVideoPath);
+    public native int startRecord(String recordVideoPath);
 
     @Override
     public boolean doCapture(Bitmap bitmap) {

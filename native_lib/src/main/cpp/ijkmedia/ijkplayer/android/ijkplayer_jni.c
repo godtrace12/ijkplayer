@@ -1157,9 +1157,10 @@ IjkMediaPlayer_getCurrentFrame(JNIEnv *env, jobject thiz, jobject bitmap)
     return retval;
 }
 
-static void IjkMediaPlayer_startRecord(JNIEnv* env,jobject thiz,jstring recordFilePath){
+static jint IjkMediaPlayer_startRecord(JNIEnv* env,jobject thiz,jstring recordFilePath){
     IjkMediaPlayer *mp = jni_get_media_player(env, thiz);
     ijkmp_start_record(mp);
+    return 0;
 }
 
 
