@@ -7,7 +7,6 @@
 
 #include <pthread.h>
 #include <android/log.h>
-#include <vector>
 #include <string>
 #include <android/native_window.h>
 #include "unistd.h"
@@ -37,8 +36,7 @@ extern "C"{
 //自定义宏
 #define DX_FRAME_TYPE_VIDEO  0
 #define DX_FRAME_TYPE_AUDIO 1
-
-using std::vector;
+#define DX_MAX_DECODE_FRAME_SIZE 3000
 
 typedef struct OutputStream {
     AVStream *st;
@@ -87,7 +85,11 @@ typedef struct DX_RecordRelateData{
     //输入流格式
     InputSourceInfo srcFormat;
     // 保存的解码帧
-    vector<DX_FrameData> recordDataFrames;
+    DX_FrameData recordFramesQueue[DX_MAX_DECODE_FRAME_SIZE];
+    // 与recordFramesQueue相关 可读的索引值（即准备编码时取的索引）初始值0 （不考虑复用情况，可不用）
+    int rindex;
+    // 与recordFramesQueue相关 可写的索引值（即解码时写入的索引）初始值0 （即保存的解码帧个数）
+    int windex = 0;
 
 }DX_RecordRelateData;
 

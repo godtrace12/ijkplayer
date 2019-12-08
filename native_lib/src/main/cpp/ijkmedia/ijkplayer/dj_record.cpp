@@ -370,8 +370,7 @@ void* doRecordFile(void *infoData){
     LOGE("线程中执行C函数执行停止执行录制 %s",recordRelateDataPtr->fileName);
 //    free_record_frames();
 
-    LOGE("已录制Frame%d",recordRelateDataPtr->recordDataFrames.size())
-
+    LOGE("已录制Frame%d",recordRelateDataPtr->windex)
 
     const char *fileName = recordRelateDataPtr->fileName;
     //获取保存到的输入上下文
@@ -445,7 +444,7 @@ void* doRecordFile(void *infoData){
     }
     InputSourceInfo inSrcInfo = recordRelateDataPtr->srcFormat;
     //v3 根据所有解码后的帧顺序(包括视频帧和音频帧来编码)
-    int frNum = recordRelateDataPtr->recordDataFrames.size();
+    int frNum = recordRelateDataPtr->windex;
     LOGE("总共需编码 %d 帧",frNum);
     SwsContext *swsContext = sws_getContext(
             inSrcInfo.width   //原图片的宽
@@ -457,8 +456,8 @@ void* doRecordFile(void *infoData){
             , NULL, NULL, NULL
     );
     LOGE("线程中 开始音视频编码");
-    for(int i=0;i<recordRelateDataPtr->recordDataFrames.size();i++){
-        DX_FrameData frData = recordRelateDataPtr->recordDataFrames[i];
+    for(int i=0;i<recordRelateDataPtr->windex;i++){
+        DX_FrameData frData = recordRelateDataPtr->recordFramesQueue[i];
 //        LOGE("线程中 拿到一解码帧数据");
         // 视频帧
         if(frData.frameType == DX_FRAME_TYPE_VIDEO){
@@ -530,28 +529,26 @@ void* doRecordFile(void *infoData){
 
 void free_record_frames(DX_RecordRelateData* recData) {
     LOGE("C线程中执行录像内存释放");
-    int frSize = recData->recordDataFrames.size();
-    LOGE("recordDaraFrame size=%d",recData->recordDataFrames.size());
-    for(int i=0;i<frSize;i++){
-        uint8_t *data0 = recData->recordDataFrames[i].data0;
-        uint8_t *data1 = recData->recordDataFrames[i].data1;
-        if (recData->recordDataFrames[i].dataNum == 1){
-            if (data0 != NULL){
+    LOGE("recordDaraFrameQueue size=%d",recData->windex);
+    //使用数组保存时的内存释放
+    for(int i= 0;i<recData->windex;i++){
+        DX_FrameData dataFrame = recData->recordFramesQueue[i];
+        uint8_t *data0 = dataFrame.data0;
+        uint8_t *data1 = dataFrame.data1;
+
+        if(dataFrame.dataNum == 1){
+            if(data0 != NULL){
                 free(data0);
                 data0 = NULL;
             }
-        }else if (recData->recordDataFrames[i].dataNum == 2){
-            if (data0 != NULL){
-                free(data0);
-                data0 = NULL;
-            }
+        }else if(dataFrame.dataNum == 2){
             if (data1 != NULL){
                 free(data1);
                 data1 = NULL;
             }
         }
     }
-    recData->recordDataFrames.clear();
+    recData->windex = 0;
 
 }
 
