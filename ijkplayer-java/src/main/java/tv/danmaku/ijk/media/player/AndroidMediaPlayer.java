@@ -132,6 +132,11 @@ public class AndroidMediaPlayer extends AbstractMediaPlayer {
 
     }
 
+    @Override
+    public void doStopRecord() {
+
+    }
+
     @TargetApi(Build.VERSION_CODES.M)
     private static class MediaDataSourceProxy extends MediaDataSource {
         private final IMediaDataSource mMediaDataSource;

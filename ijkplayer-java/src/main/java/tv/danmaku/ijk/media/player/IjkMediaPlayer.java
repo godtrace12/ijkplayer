@@ -1288,6 +1288,7 @@ public final class IjkMediaPlayer extends AbstractMediaPlayer {
 
     public native boolean getCurrentFrame(Bitmap bitmap);
     public native int startRecord(String recordVideoPath);
+    public native int stopRecord();
 
     @Override
     public boolean doCapture(Bitmap bitmap) {
@@ -1297,5 +1298,10 @@ public final class IjkMediaPlayer extends AbstractMediaPlayer {
     @Override
     public void doStartRecord(String recordVideoPath) {
         startRecord(recordVideoPath);
+    }
+
+    @Override
+    public void doStopRecord() {
+        stopRecord();
     }
 }

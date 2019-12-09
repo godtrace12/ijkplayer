@@ -347,4 +347,9 @@ public class MediaPlayerProxy implements IMediaPlayer {
     public void doStartRecord(String recordVideoPath) {
 
     }
+
+    @Override
+    public void doStopRecord() {
+
+    }
 }

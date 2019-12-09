@@ -87,6 +87,11 @@ public class IjkExoMediaPlayer extends AbstractMediaPlayer {
     }
 
     @Override
+    public void doStopRecord() {
+
+    }
+
+    @Override
     public void setDataSource(Context context, Uri uri) {
         mDataSource = uri.toString();
         mRendererBuilder = getRendererBuilder();
