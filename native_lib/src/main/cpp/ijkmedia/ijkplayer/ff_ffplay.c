@@ -5086,3 +5086,17 @@ void ffp_get_current_frame_l(FFPlayer *ffp, uint8_t *frame_buf)
 
     ALOGD("=============>end snapshot\n");
 }
+
+void ffp_start_record(FFPlayer *ffp, const char *file_name)
+{
+    ffp->dx_recordRelData.windex = 0;
+    ffp->dx_recordRelData.rindex = 0;
+    ffp->dx_recordRelData.fileName = file_name;
+//    ffp->dx_recordRelData.isInRecord = DX_RECORD_STATUS_ON;
+    ALOGD("ffp_start_record filename=%s recordStatus=%d\n",file_name,ffp->dx_recordRelData.isInRecord);
+    ffp->dx_recordRelData.isInRecord = DX_RECORD_STATUS_ON;
+}
+
+void ffp_stop_record(FFPlayer *ffp){
+    ALOGD("ffp_stop_record filename=%s recordStatus=%d\n",ffp->dx_recordRelData.fileName,ffp->dx_recordRelData.isInRecord);
+}

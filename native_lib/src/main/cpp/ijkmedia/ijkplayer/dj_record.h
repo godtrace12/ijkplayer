@@ -37,6 +37,9 @@
 #define DX_FRAME_TYPE_VIDEO  0
 #define DX_FRAME_TYPE_AUDIO 1
 #define DX_MAX_DECODE_FRAME_SIZE 3000
+//录像状态
+#define DX_RECORD_STATUS_OFF 0
+#define DX_RECORD_STATUS_ON 1
 
 typedef struct OutputStream {
     AVStream *st;

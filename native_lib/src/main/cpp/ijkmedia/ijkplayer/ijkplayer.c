@@ -814,10 +814,12 @@ void ijkmp_start_record(IjkMediaPlayer *mp, const char *recordFileName){
     MPTRACE("ijkmp_start_record: dj prepare to start record %s\n",recordFileName);
     //原有实现得修改，去除c++ vector，改为纯数组或指针再调用
 //    test_func();
+    ffp_start_record(mp->ffplayer,recordFileName);
 }
 
 void ijkmp_stop_record(IjkMediaPlayer *mp){
             MPTRACE("ijkmp_stop_record: dj stop record\n");
     //原有实现得修改，去除c++ vector，改为纯数组或指针再调用
 //    test_func();
+    ffp_stop_record(mp->ffplayer);
 }
