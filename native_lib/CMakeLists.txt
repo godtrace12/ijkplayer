@@ -147,7 +147,7 @@ set( SRC_FILES
         ${BASE_JNI_DIR}/ijkmedia/ijkplayer/ijkplayer.c
         ${BASE_JNI_DIR}/ijkmedia/ijkplayer/pipeline/ffpipeline_ffplay.c
         ${BASE_JNI_DIR}/ijkmedia/ijkplayer/pipeline/ffpipenode_ffplay_vdec.c
-        ${BASE_JNI_DIR}/ijkmedia/ijkplayer/dj_record.cpp
+        ${BASE_JNI_DIR}/ijkmedia/ijkplayer/dj_record.c
         ${BASE_JNI_DIR}/ijkmedia/ijksdl/android/android_audiotrack.c
         ${BASE_JNI_DIR}/ijkmedia/ijksdl/android/android_nativewindow.c
         ${BASE_JNI_DIR}/ijkmedia/ijksdl/android/ijksdl_android_jni.c

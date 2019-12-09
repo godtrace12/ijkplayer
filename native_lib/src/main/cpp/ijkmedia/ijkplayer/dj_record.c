@@ -107,7 +107,7 @@ void open_video(AVFormatContext *oc, AVCodec *codec, OutputStream *ost,
     }
 // allocate and init a re-usable frame
 
-    ost->frame = alloc_picture(c->pix_fmt, c->width, c->height);
+    ost->frame = dx_alloc_picture(c->pix_fmt, c->width, c->height);
     if (!ost->frame) {
         fprintf(stderr, "Could not allocate video frame\n");
         exit(1);
@@ -118,7 +118,7 @@ void open_video(AVFormatContext *oc, AVCodec *codec, OutputStream *ost,
 
     ost->tmp_frame = NULL;
     if (c->pix_fmt != AV_PIX_FMT_YUV420P) {
-        ost->tmp_frame = alloc_picture(AV_PIX_FMT_YUV420P, c->width, c->height);
+        ost->tmp_frame = dx_alloc_picture(AV_PIX_FMT_YUV420P, c->width, c->height);
         if (!ost->tmp_frame) {
             fprintf(stderr, "Could not allocate temporary picture\n");
             exit(1);
@@ -182,7 +182,7 @@ void open_audio(AVFormatContext *oc, AVCodec *codec, OutputStream *ost,
     }
 }
 
-AVFrame* alloc_picture(enum AVPixelFormat pix_fmt, int width, int height) {
+AVFrame* dx_alloc_picture(enum AVPixelFormat pix_fmt, int width, int height) {
     AVFrame *picture;
     int ret;
     picture = av_frame_alloc();
@@ -615,7 +615,7 @@ void* doRecordFile(void *infoData){
     //v3 根据所有解码后的帧顺序(包括视频帧和音频帧来编码)
     int frNum = recordRelateDataPtr->windex;
     LOGE("总共需编码 %d 帧",frNum);
-    SwsContext *swsContext = sws_getContext(
+    struct SwsContext *swsContext = sws_getContext(
             inSrcInfo.width   //原图片的宽
             ,inSrcInfo.height  //源图高
             ,AV_PIX_FMT_YUV420P //源图片format

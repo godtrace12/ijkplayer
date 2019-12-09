@@ -10,7 +10,7 @@
 //#include <string>
 #include <android/native_window.h>
 #include "unistd.h"
-extern "C"{
+//extern "C"{
 //#include "ff_ffplay_def.h"
 #include "libavcodec/avcodec.h"
 #include "libavutil/avutil.h"
@@ -25,7 +25,7 @@ extern "C"{
 #include "libavformat/avformat.h"
 //像素处理
 #include "libswscale/swscale.h"
-}
+//}
 
 #define STREAM_DURATION   10.0
 #define STREAM_FRAME_RATE 25 /* 25 images/s */
@@ -77,7 +77,8 @@ typedef struct DX_FrameData{
 typedef struct DX_RecordRelateData{
     //示例代码中编码相关
     //输出上下文
-    OutputStream video_st = { 0 }, audio_st = { 0 };
+    OutputStream video_st;
+    OutputStream audio_st;
     AVFormatContext *oc;
     AVOutputFormat *fmt;
     AVCodec *audio_codec, *video_codec;
@@ -91,9 +92,9 @@ typedef struct DX_RecordRelateData{
     // 与recordFramesQueue相关 可读的索引值（即准备编码时取的索引）初始值0 （不考虑复用情况，可不用）
     int rindex;
     // 与recordFramesQueue相关 可写的索引值（即解码时写入的索引）初始值0 （即保存的解码帧个数）
-    int windex = 0;
+    int windex;
     // 是否正在进行录制
-    bool isInRecord = false;
+    int isInRecord;
 
 }DX_RecordRelateData;
 
@@ -103,7 +104,7 @@ void add_stream(OutputStream *ost, AVFormatContext *oc,
                 enum AVCodecID codec_id,InputSourceInfo inputSrcInfo);
 void open_video(AVFormatContext *oc, AVCodec *codec, OutputStream *ost, AVDictionary *opt_arg);
 void open_audio(AVFormatContext *oc, AVCodec *codec, OutputStream *ost, AVDictionary *opt_arg);
-AVFrame *alloc_picture(enum AVPixelFormat pix_fmt, int width, int height);
+AVFrame *dx_alloc_picture(enum AVPixelFormat pix_fmt, int width, int height);
 AVFrame *alloc_audio_frame(enum AVSampleFormat sample_fmt,
                            uint64_t channel_layout,
                            int sample_rate, int nb_samples);
