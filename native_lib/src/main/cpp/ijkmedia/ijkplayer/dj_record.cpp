@@ -360,6 +360,174 @@ void close_stream(AVFormatContext *oc, OutputStream *ost) {
     swr_free(&ost->swr_ctx);
 }
 
+//void* doRecordFile(void *infoData){
+//
+////    usleep(1000);
+//    sleep(1);
+//    DX_RecordRelateData *recordRelateDataPtr = (DX_RecordRelateData*)(infoData);
+//
+//
+//    LOGE("线程中执行C函数执行停止执行录制 %s",recordRelateDataPtr->fileName);
+////    free_record_frames();
+//
+//    LOGE("已录制Frame%d",recordRelateDataPtr->windex)
+//
+//    const char *fileName = recordRelateDataPtr->fileName;
+//    //获取保存到的输入上下文
+//    //输出上下文
+//    AVFormatContext *oc;
+//    AVOutputFormat *fmt;    //临时变量
+//    OutputStream* videoStPtr;
+//    OutputStream* audioStPtr;
+////    AVCodec *audio_codec, *video_codec;
+//    int ret;
+//    int have_video = 0, have_audio = 0;
+//    int encode_video = 0, encode_audio = 0;
+//    AVDictionary *opt = NULL;
+////    av_dict_set(&opt,"profile","baseline",AV_DICT_MATCH_CASE);
+//
+//    av_dict_set(&opt, "preset", "veryfast", 0); // av_opt_set(pCodecCtx->priv_data,"preset","fast",0);
+//    av_dict_set(&opt, "tune", "zerolatency", 0);
+//
+//    LOGE("线程中avformat_alloc_output_context2");
+//    avformat_alloc_output_context2(&(recordRelateDataPtr->oc),NULL,NULL,fileName);
+//    oc = recordRelateDataPtr->oc;
+//    if (!oc){
+//        LOGD("startRecord avformat_alloc_output_context2 fail");
+//        avformat_alloc_output_context2(&oc, NULL, "mp4", fileName);
+//    }
+//    if (!oc){
+//        LOGE("avformat_alloc_output_context2 失败");
+//        return NULL;
+//    }else{
+//        LOGE("avformat_alloc_output_context2 成功");
+//    }
+//    fmt = recordRelateDataPtr->oc->oformat;
+//    //Add the audio and video streams using the default format codecs
+//    // and initialize the codecs.
+//    LOGE("线程中add_stream");
+//    if (fmt->video_codec != AV_CODEC_ID_NONE) {
+//        add_stream(&(recordRelateDataPtr->video_st), recordRelateDataPtr->oc, &(recordRelateDataPtr->video_codec), fmt->video_codec,recordRelateDataPtr->srcFormat);
+//        have_video = 1;
+//        encode_video = 1;
+//    }
+//    if (fmt->audio_codec != AV_CODEC_ID_NONE) {
+//        add_stream(&(recordRelateDataPtr->audio_st), recordRelateDataPtr->oc, &recordRelateDataPtr->audio_codec, fmt->audio_codec,recordRelateDataPtr->srcFormat);
+//        have_audio = 1;
+//        encode_audio = 1;
+//    }
+//    LOGE("线程中 open video");
+//    videoStPtr = &recordRelateDataPtr->video_st;
+//    audioStPtr = &recordRelateDataPtr->audio_st;
+//    if (have_video)
+//        open_video(recordRelateDataPtr->oc, recordRelateDataPtr->video_codec, &recordRelateDataPtr->video_st, opt);
+//    if (have_audio)
+//        open_audio(recordRelateDataPtr->oc, recordRelateDataPtr->audio_codec, &recordRelateDataPtr->audio_st, opt);
+//    av_dump_format(recordRelateDataPtr->oc, 0, fileName, 1);
+//    //open the output file, if needed
+//    LOGE("线程中 avio_open");
+//    if (!(fmt->flags & AVFMT_NOFILE)) {
+//        ret = avio_open(&oc->pb, fileName, AVIO_FLAG_WRITE);
+//        if (ret < 0) {
+//            LOGE("Could not open %s",fileName);
+//            LOGE("dj Could not open %s",fileName);
+//            return NULL;
+//        }
+//    }
+//    //Write the stream header, if any.
+//    LOGE("线程中 avformat_write_header");
+//
+//    ret = avformat_write_header(oc, &opt);
+//    if (ret < 0) {
+//        LOGE("Error occurred when opening output file %s",av_err2str(ret));
+//        return NULL;
+//    }
+//    InputSourceInfo inSrcInfo = recordRelateDataPtr->srcFormat;
+//    //v3 根据所有解码后的帧顺序(包括视频帧和音频帧来编码)
+//    int frNum = recordRelateDataPtr->windex;
+//    LOGE("总共需编码 %d 帧",frNum);
+//    SwsContext *swsContext = sws_getContext(
+//            inSrcInfo.width   //原图片的宽
+//            ,inSrcInfo.height  //源图高
+//            ,AV_PIX_FMT_RGBA //源图片format
+//            ,inSrcInfo.width  //目标图的宽
+//            ,inSrcInfo.height  //目标图的高
+//            ,AV_PIX_FMT_YUV420P,SWS_FAST_BILINEAR
+//            , NULL, NULL, NULL
+//    );
+//    LOGE("线程中 开始音视频编码");
+//    for(int i=0;i<recordRelateDataPtr->windex;i++){
+//        DX_FrameData frData = recordRelateDataPtr->recordFramesQueue[i];
+////        LOGE("线程中 拿到一解码帧数据");
+//        // 视频帧
+//        if(frData.frameType == DX_FRAME_TYPE_VIDEO){
+//            //对输出图像进行色彩，分辨率缩放，滤波处理
+//            uint8_t *srcSlice[3];
+//            srcSlice[0] = frData.data0;
+//            srcSlice[1] = NULL;
+//            srcSlice[2] = NULL;
+//            int srcLineSize[3];
+//            srcLineSize[0] = frData.lineSize0;
+//            //yuv数据每个分量一个字节，一行大小等于宽度
+//            int dstLineSize[3];
+//            dstLineSize[0] = inSrcInfo.width;
+//            dstLineSize[1] = inSrcInfo.width;
+//            dstLineSize[2] = inSrcInfo.width;
+//            sws_scale(swsContext, (const uint8_t *const *) srcSlice, srcLineSize, 0,
+//                      inSrcInfo.height, recordRelateDataPtr->video_st.frame->data, recordRelateDataPtr->video_st.frame->linesize);
+//            recordRelateDataPtr->video_st.frame->pts = recordRelateDataPtr->video_st.next_pts++;
+////            fill_yuv_image(recordRelateDataPtr->video_st.frame,i,inSrcInfo.width,inSrcInfo.height);
+//
+//            LOGE("线程中 开始处理一帧视频数据");
+//            write_video_frame(oc,&recordRelateDataPtr->video_st,recordRelateDataPtr->video_st.frame);
+//            LOGE("线程中 完成一帧数据编码写入");
+//        }else {     //音频帧
+//            //avcodec_decode_audio4  解码出来的音频数据是 AV_SAMPLE_FMT_FLTP,所以数据在data0 data1中
+////            LOGE("开始编码音频帧 nb_samples %d  channels %d  channel_layout %d",frData.nb_samples,frData.channels,frData.channel_layout);
+//
+//            AVFrame* tmpFr = audioStPtr->tmp_frame;
+//            tmpFr->data[0] = (uint8_t *)av_malloc(frData.lineSize0);
+//            tmpFr->data[1] = (uint8_t *)av_malloc(frData.lineSize1);
+//            memcpy(tmpFr->data[0],frData.data0,frData.lineSize0);
+//            memcpy(tmpFr->data[1],frData.data1,frData.lineSize1);
+//            tmpFr->nb_samples = frData.nb_samples;
+//            tmpFr->channels = frData.channels;
+//            tmpFr->channel_layout = frData.channel_layout;
+//            tmpFr->pts = audioStPtr->next_pts;
+//            audioStPtr->next_pts += tmpFr->nb_samples;
+////            LOGE("完成单帧音频编码数据拷贝");
+////            LOGE("线程中 开始写视频帧");
+//            write_audio_frame(oc,audioStPtr,tmpFr);
+//
+//        }
+//    }
+//    LOGE("线程中 音视频编码完毕");
+//    free_record_frames(recordRelateDataPtr);
+//
+//
+//    //Write the trailer, if any. The trailer must be written before you
+//    //close the CodecContexts open when you wrote the header; otherwise
+//    //av_write_trailer() may try to use memory that was freed on
+//    //av_codec_close().
+//
+//    av_write_trailer(oc);
+//    //Close each codec.
+//
+//    if (have_video)
+//        close_stream(oc, videoStPtr);
+//    if (have_audio)
+//        close_stream(oc, audioStPtr);
+//    if (!(fmt->flags & AVFMT_NOFILE))
+//        //Close the output file.
+//
+//        avio_closep(&oc->pb);
+//    //free the stream
+//
+//    avformat_free_context(oc);
+//    return NULL;
+//}
+
+// 方式2  直接使用解码后的yuv420p数据
 void* doRecordFile(void *infoData){
 
 //    usleep(1000);
@@ -371,6 +539,7 @@ void* doRecordFile(void *infoData){
 //    free_record_frames();
 
     LOGE("已录制Frame%d",recordRelateDataPtr->windex)
+
 
     const char *fileName = recordRelateDataPtr->fileName;
     //获取保存到的输入上下文
@@ -449,41 +618,45 @@ void* doRecordFile(void *infoData){
     SwsContext *swsContext = sws_getContext(
             inSrcInfo.width   //原图片的宽
             ,inSrcInfo.height  //源图高
-            ,AV_PIX_FMT_RGBA //源图片format
+            ,AV_PIX_FMT_YUV420P //源图片format
             ,inSrcInfo.width  //目标图的宽
             ,inSrcInfo.height  //目标图的高
             ,AV_PIX_FMT_YUV420P,SWS_FAST_BILINEAR
             , NULL, NULL, NULL
     );
     LOGE("线程中 开始音视频编码");
-    for(int i=0;i<recordRelateDataPtr->windex;i++){
-        DX_FrameData frData = recordRelateDataPtr->recordFramesQueue[i];
-//        LOGE("线程中 拿到一解码帧数据");
+//    for(int i=0;i<recordRelateDataPtr->recordDataFrames.size();i++){  // method 1
+    for(int i=0;i<recordRelateDataPtr->windex;i++){        //method 2
+//            DX_FrameData frData = recordRelateDataPtr->recordDataFrames[i]; // method 1
+        DX_FrameData frData = recordRelateDataPtr->recordFramesQueue[i];    //method 2
+        //        LOGE("线程中 拿到一解码帧数据");
         // 视频帧
         if(frData.frameType == DX_FRAME_TYPE_VIDEO){
             //对输出图像进行色彩，分辨率缩放，滤波处理
             uint8_t *srcSlice[3];
             srcSlice[0] = frData.data0;
-            srcSlice[1] = NULL;
-            srcSlice[2] = NULL;
+            srcSlice[1] = frData.data1;
+            srcSlice[2] = frData.data2;
             int srcLineSize[3];
             srcLineSize[0] = frData.lineSize0;
+            srcLineSize[1] = frData.lineSize1;
+            srcLineSize[2] = frData.lineSize2;
             //yuv数据每个分量一个字节，一行大小等于宽度
             int dstLineSize[3];
             dstLineSize[0] = inSrcInfo.width;
-            dstLineSize[1] = inSrcInfo.width;
-            dstLineSize[2] = inSrcInfo.width;
+            dstLineSize[1] = inSrcInfo.width/2;
+            dstLineSize[2] = inSrcInfo.width/2;
             sws_scale(swsContext, (const uint8_t *const *) srcSlice, srcLineSize, 0,
                       inSrcInfo.height, recordRelateDataPtr->video_st.frame->data, recordRelateDataPtr->video_st.frame->linesize);
             recordRelateDataPtr->video_st.frame->pts = recordRelateDataPtr->video_st.next_pts++;
-//            fill_yuv_image(recordRelateDataPtr->video_st.frame,i,inSrcInfo.width,inSrcInfo.height);
+            //            fill_yuv_image(recordRelateDataPtr->video_st.frame,i,inSrcInfo.width,inSrcInfo.height);
 
             LOGE("线程中 开始处理一帧视频数据");
             write_video_frame(oc,&recordRelateDataPtr->video_st,recordRelateDataPtr->video_st.frame);
             LOGE("线程中 完成一帧数据编码写入");
         }else {     //音频帧
             //avcodec_decode_audio4  解码出来的音频数据是 AV_SAMPLE_FMT_FLTP,所以数据在data0 data1中
-//            LOGE("开始编码音频帧 nb_samples %d  channels %d  channel_layout %d",frData.nb_samples,frData.channels,frData.channel_layout);
+            //            LOGE("开始编码音频帧 nb_samples %d  channels %d  channel_layout %d",frData.nb_samples,frData.channels,frData.channel_layout);
 
             AVFrame* tmpFr = audioStPtr->tmp_frame;
             tmpFr->data[0] = (uint8_t *)av_malloc(frData.lineSize0);
@@ -495,8 +668,8 @@ void* doRecordFile(void *infoData){
             tmpFr->channel_layout = frData.channel_layout;
             tmpFr->pts = audioStPtr->next_pts;
             audioStPtr->next_pts += tmpFr->nb_samples;
-//            LOGE("完成单帧音频编码数据拷贝");
-//            LOGE("线程中 开始写视频帧");
+            //            LOGE("完成单帧音频编码数据拷贝");
+            //            LOGE("线程中 开始写视频帧");
             write_audio_frame(oc,audioStPtr,tmpFr);
 
         }

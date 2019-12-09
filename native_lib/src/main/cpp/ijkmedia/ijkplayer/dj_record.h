@@ -7,7 +7,7 @@
 
 #include <pthread.h>
 #include <android/log.h>
-#include <string>
+//#include <string>
 #include <android/native_window.h>
 #include "unistd.h"
 extern "C"{
@@ -59,8 +59,10 @@ typedef struct InputSourceInfo{
 typedef struct DX_FrameData{
     uint8_t * data0;
     uint8_t * data1;
+    uint8_t * data2;
     int lineSize0;
     int lineSize1;
+    int lineSize2;
     //指示有几个data
     int dataNum;
     //帧数据类型0-视频 1-音频
@@ -90,6 +92,8 @@ typedef struct DX_RecordRelateData{
     int rindex;
     // 与recordFramesQueue相关 可写的索引值（即解码时写入的索引）初始值0 （即保存的解码帧个数）
     int windex = 0;
+    // 是否正在进行录制
+    bool isInRecord = false;
 
 }DX_RecordRelateData;
 
