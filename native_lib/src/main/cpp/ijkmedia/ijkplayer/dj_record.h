@@ -98,6 +98,8 @@ typedef struct DX_RecordRelateData{
     int windex;
     // 是否正在进行录制
     int isInRecord;
+    // 录像线程id
+    pthread_t recThreadid;
 
 }DX_RecordRelateData;
 

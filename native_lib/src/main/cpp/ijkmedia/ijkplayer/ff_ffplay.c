@@ -607,6 +607,29 @@ static int decoder_decode_frame(FFPlayer *ffp, Decoder *d, AVFrame *frame, AVSub
                             } else if (!ffp->decoder_reorder_pts) {
                                 frame->pts = frame->pkt_dts;
                             }
+
+                            //mody by dj add video record process
+                            if (frame->format == AV_PIX_FMT_YUV420P && ffp->dx_recordRelData.isInRecord == DX_RECORD_STATUS_ON){
+                                if (frame->width >0 && frame->height >0){
+                                    DX_FrameData frData;
+                                    frData.data0 = (uint8_t *)malloc((size_t)frame->linesize[0] * frame->height);
+                                    frData.data1 = (uint8_t *)malloc((size_t)frame->linesize[1]*frame->height/2);
+                                    frData.data2 = (uint8_t *)malloc((size_t)frame->linesize[1]*frame->height/2);
+                                    frData.dataNum = 3;
+                                    frData.frameType = DX_FRAME_TYPE_VIDEO;
+                                    frData.lineSize0 = frame->linesize[0];
+                                    frData.lineSize1 = frame->linesize[1];
+                                    frData.lineSize2 = frame->linesize[2];
+                                    memcpy(frData.data0,frame->data[0],frame->linesize[0]*frame->height);
+                                    memcpy(frData.data1,frame->data[1],frame->linesize[1]*frame->height/2);
+                                    memcpy(frData.data2,frame->data[2],frame->linesize[2]*frame->height/2);
+                                    int windex = ffp->dx_recordRelData.windex;
+                                    ffp->dx_recordRelData.recordFramesQueue[windex] = frData;
+                                    ffp->dx_recordRelData.windex += 1;
+                                    ffp->dx_recordRelData.srcFormat.height = frame->height;
+                                    ffp->dx_recordRelData.srcFormat.width = frame->width;
+                                }
+                            }
                         }
                         break;
                     case AVMEDIA_TYPE_AUDIO:
@@ -5095,8 +5118,11 @@ void ffp_start_record(FFPlayer *ffp, const char *file_name)
 //    ffp->dx_recordRelData.isInRecord = DX_RECORD_STATUS_ON;
     ALOGD("ffp_start_record filename=%s recordStatus=%d\n",file_name,ffp->dx_recordRelData.isInRecord);
     ffp->dx_recordRelData.isInRecord = DX_RECORD_STATUS_ON;
+    pthread_create(&(ffp->dx_recordRelData.recThreadid),NULL,doRecordFile,(void *)(&(ffp->dx_recordRelData)));
 }
 
 void ffp_stop_record(FFPlayer *ffp){
     ALOGD("ffp_stop_record filename=%s recordStatus=%d\n",ffp->dx_recordRelData.fileName,ffp->dx_recordRelData.isInRecord);
+    ffp->dx_recordRelData.isInRecord = DX_RECORD_STATUS_OFF;
+
 }

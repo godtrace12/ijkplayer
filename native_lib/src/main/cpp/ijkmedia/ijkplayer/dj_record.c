@@ -16,6 +16,7 @@ void add_stream(OutputStream *ost, AVFormatContext *oc, AVCodec **codec,
     if (!(*codec)) {
         fprintf(stderr, "Could not find encoder for '%s'\n",
                 avcodec_get_name(codec_id));
+        LOGE("未找到编码器encoder %s",avcodec_get_name(codec_id));
         exit(1);
     }
     ost->st = avformat_new_stream(oc, *codec);
