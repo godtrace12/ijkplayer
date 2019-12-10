@@ -644,6 +644,28 @@ static int decoder_decode_frame(FFPlayer *ffp, Decoder *d, AVFrame *frame, AVSub
                                 d->next_pts = frame->pts + frame->nb_samples;
                                 d->next_pts_tb = tb;
                             }
+                            //mody by dj add video record process
+                            if(ffp->dx_recordRelData.isInRecord == DX_RECORD_STATUS_ON && frame->format == AV_SAMPLE_FMT_FLTP){
+                                if(frame->linesize[0] >0){
+                                    DX_FrameData frData;
+                                    frData.data0 = (uint8_t *)av_malloc(frame->linesize[0]);
+                                    memcpy(frData.data0,frame->data[0],frame->linesize[0]);
+                                    frData.data1 = (uint8_t *)av_malloc(frame->linesize[0]);
+                                    memcpy(frData.data1,frame->data[1],frame->linesize[0]);
+                                    frData.frameType = DX_FRAME_TYPE_AUDIO;
+                                    frData.dataNum = 2;
+                                    frData.nb_samples = frame->nb_samples;
+                                    frData.channel_layout = frame->channel_layout;
+                                    frData.channels = frame->channels;
+                                    frData.lineSize0 = frame->linesize[0];
+                                    frData.lineSize1 = frame->linesize[0];
+                                    int windex = ffp->dx_recordRelData.windex;
+                                    ffp->dx_recordRelData.recordFramesQueue[windex] = frData;
+                                    ffp->dx_recordRelData.windex += 1;
+                                    ffp->dx_recordRelData.srcFormat.height = frame->height;
+                                    ffp->dx_recordRelData.srcFormat.width = frame->width;
+                                }
+                            }
                         }
                         break;
                     default:
