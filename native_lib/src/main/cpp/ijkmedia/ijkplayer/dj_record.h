@@ -74,6 +74,8 @@ typedef struct DX_FrameData{
     int nb_samples;
     uint64_t channel_layout;
     int channels;
+    //代表音频/视频流的格式
+    int format;
 }DX_FrameData;
 
 //录像相关信息

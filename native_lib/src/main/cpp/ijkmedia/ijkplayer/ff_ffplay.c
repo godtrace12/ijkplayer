@@ -620,6 +620,7 @@ static int decoder_decode_frame(FFPlayer *ffp, Decoder *d, AVFrame *frame, AVSub
                                     frData.lineSize0 = frame->linesize[0];
                                     frData.lineSize1 = frame->linesize[1];
                                     frData.lineSize2 = frame->linesize[2];
+                                    frData.format = frame->format;
                                     memcpy(frData.data0,frame->data[0],frame->linesize[0]*frame->height);
                                     memcpy(frData.data1,frame->data[1],frame->linesize[1]*frame->height/2);
                                     memcpy(frData.data2,frame->data[2],frame->linesize[2]*frame->height/2);
@@ -659,13 +660,29 @@ static int decoder_decode_frame(FFPlayer *ffp, Decoder *d, AVFrame *frame, AVSub
                                     frData.channels = frame->channels;
                                     frData.lineSize0 = frame->linesize[0];
                                     frData.lineSize1 = frame->linesize[0];
+                                    frData.format = frame->format;
                                     int windex = ffp->dx_recordRelData.windex;
                                     ffp->dx_recordRelData.recordFramesQueue[windex] = frData;
                                     ffp->dx_recordRelData.windex += 1;
-                                    ffp->dx_recordRelData.srcFormat.height = frame->height;
-                                    ffp->dx_recordRelData.srcFormat.width = frame->width;
                                 }
                             }
+//                            else if(ffp->dx_recordRelData.isInRecord == DX_RECORD_STATUS_ON && frame->format == AV_SAMPLE_FMT_S16){
+//                                if(frame->linesize[0] >0){
+//                                    DX_FrameData frData;
+//                                    frData.data0 = (uint8_t *)av_malloc(frame->linesize[0]);
+//                                    memcpy(frData.data0,frame->data[0],frame->linesize[0]);
+//                                    frData.frameType = DX_FRAME_TYPE_AUDIO;
+//                                    frData.dataNum = 1;
+//                                    frData.nb_samples = frame->nb_samples;
+//                                    frData.channel_layout = frame->channel_layout;
+//                                    frData.channels = frame->channels;
+//                                    frData.lineSize0 = frame->linesize[0];
+//                                    frData.format = frame->format;
+//                                    int windex = ffp->dx_recordRelData.windex;
+//                                    ffp->dx_recordRelData.recordFramesQueue[windex] = frData;
+//                                    ffp->dx_recordRelData.windex += 1;
+//                                }
+//                            }
                         }
                         break;
                     default:

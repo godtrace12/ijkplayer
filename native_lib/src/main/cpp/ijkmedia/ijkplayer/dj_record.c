@@ -174,7 +174,7 @@ void open_audio(AVFormatContext *oc, AVCodec *codec, OutputStream *ost,
     av_opt_set_sample_fmt(ost->swr_ctx, "in_sample_fmt",      AV_SAMPLE_FMT_S16, 0);
     av_opt_set_int       (ost->swr_ctx, "out_channel_count",  c->channels,       0);
     av_opt_set_int       (ost->swr_ctx, "out_sample_rate",    c->sample_rate,    0);
-    av_opt_set_sample_fmt(ost->swr_ctx, "out_sample_fmt",     c->sample_fmt,     0);
+    av_opt_set_sample_fmt(ost->swr_ctx, "out_sample_fmt",     AV_SAMPLE_FMT_FLTP,     0);
 // initialize the resampling context
 
     if ((ret = swr_init(ost->swr_ctx)) < 0) {
@@ -307,33 +307,42 @@ int write_audio_frame(AVFormatContext *oc, OutputStream *ost,AVFrame * curFr) {
 //    frame = get_audio_frame(ost);
     //换成从外部传入数据已处理好的音频帧
     frame = curFr;
-    dst_nb_samples = curFr->nb_samples;
+//    dst_nb_samples = curFr->nb_samples;
     if (frame) {
-// convert samples from native format to destination codec format, using the resampler
+        if(frame->format == AV_SAMPLE_FMT_S16){ //FMT_S16进行格式转换
+            frame->pts = ost->next_pts;
+//            ost->next_pts += frame->nb_samples;
+            LOGE("写audio fmt-s16")
+            // convert samples from native format to destination codec format, using the resampler
 
 // compute destination number of samples
 
-//        dst_nb_samples = av_rescale_rnd(swr_get_delay(ost->swr_ctx, c->sample_rate) + frame->nb_samples,
-//                                        c->sample_rate, c->sample_rate, AV_ROUND_UP);
-//        av_assert0(dst_nb_samples == frame->nb_samples);
+        dst_nb_samples = av_rescale_rnd(swr_get_delay(ost->swr_ctx, c->sample_rate) + frame->nb_samples,
+                                        c->sample_rate, c->sample_rate, AV_ROUND_UP);
+        av_assert0(dst_nb_samples == frame->nb_samples);
 // when we pass a frame to the encoder, it may keep a reference to it
 //         internally;
 //         make sure we do not overwrite it here
 
 
-//        ret = av_frame_make_writable(ost->frame);
-//        if (ret < 0)
-//            exit(1);
+        ret = av_frame_make_writable(ost->frame);
+        if (ret < 0)
+            exit(1);
 // convert to destination format
 
-//        ret = swr_convert(ost->swr_ctx,
-//                          ost->frame->data, dst_nb_samples,
-//                          (const uint8_t **)frame->data, frame->nb_samples);
-//        if (ret < 0) {
-//            fprintf(stderr, "Error while converting\n");
-//            exit(1);
-//        }
-//        frame = ost->frame;
+        ret = swr_convert(ost->swr_ctx,
+                          ost->frame->data, dst_nb_samples,
+                          (const uint8_t **)frame->data, frame->nb_samples);
+        if (ret < 0) {
+            fprintf(stderr, "Error while converting\n");
+            exit(1);
+        }
+        frame = ost->frame;
+        ost->next_pts += dst_nb_samples;
+        }else{  // AV_SAMPLE_FMT_FLTP 格式
+            dst_nb_samples = curFr->nb_samples;
+        }
+
         frame->pts = av_rescale_q(ost->samples_count, (AVRational){1, c->sample_rate}, c->time_base);
         ost->samples_count += dst_nb_samples;
     }
@@ -625,6 +634,17 @@ void* doRecordFile(void *infoData){
             ,AV_PIX_FMT_YUV420P,SWS_FAST_BILINEAR
             , NULL, NULL, NULL
     );
+
+    // 音频AV_SAMPLE_FMT_S16 转 AV_SAMPLE_FMT_FLTP
+//    struct SwrContext *swrAudio = swr_alloc();
+//    av_opt_set_int       (swrAudio, "in_channel_count",   AV_CH_LAYOUT_STEREO,       0);
+//    av_opt_set_int       (swrAudio, "in_sample_rate",     16000,    0);
+//    av_opt_set_sample_fmt(swrAudio, "in_sample_fmt",      AV_SAMPLE_FMT_S16, 0);
+//    av_opt_set_int       (swrAudio, "out_channel_count",  AV_CH_LAYOUT_STEREO,       0);
+//    av_opt_set_int       (swrAudio, "out_sample_rate",    16000,    0);
+//    av_opt_set_sample_fmt(swrAudio, "out_sample_fmt",     AV_SAMPLE_FMT_FLTP,     0);
+//    swr_init(swrAudio);
+////    swrAudio = swr_alloc();
     LOGE("线程中 开始音视频编码");
 //    for(int i=0;i<recordRelateDataPtr->recordDataFrames.size();i++){  // method 1
     for(int i=0;i<recordRelateDataPtr->windex;i++){        //method 2
@@ -658,20 +678,40 @@ void* doRecordFile(void *infoData){
         }else {     //音频帧
             //avcodec_decode_audio4  解码出来的音频数据是 AV_SAMPLE_FMT_FLTP,所以数据在data0 data1中
             //            LOGE("开始编码音频帧 nb_samples %d  channels %d  channel_layout %d",frData.nb_samples,frData.channels,frData.channel_layout);
+            if(frData.format == AV_SAMPLE_FMT_FLTP){
+                AVFrame* tmpFr = audioStPtr->tmp_frame;
+                tmpFr->data[0] = (uint8_t *)av_malloc(frData.lineSize0);
+                tmpFr->data[1] = (uint8_t *)av_malloc(frData.lineSize1);
+                memcpy(tmpFr->data[0],frData.data0,frData.lineSize0);
+                memcpy(tmpFr->data[1],frData.data1,frData.lineSize1);
+                tmpFr->nb_samples = frData.nb_samples;
+                tmpFr->channels = frData.channels;
+                tmpFr->channel_layout = frData.channel_layout;
+                tmpFr->pts = audioStPtr->next_pts;
+                audioStPtr->next_pts += tmpFr->nb_samples;
 
-            AVFrame* tmpFr = audioStPtr->tmp_frame;
-            tmpFr->data[0] = (uint8_t *)av_malloc(frData.lineSize0);
-            tmpFr->data[1] = (uint8_t *)av_malloc(frData.lineSize1);
-            memcpy(tmpFr->data[0],frData.data0,frData.lineSize0);
-            memcpy(tmpFr->data[1],frData.data1,frData.lineSize1);
-            tmpFr->nb_samples = frData.nb_samples;
-            tmpFr->channels = frData.channels;
-            tmpFr->channel_layout = frData.channel_layout;
-            tmpFr->pts = audioStPtr->next_pts;
-            audioStPtr->next_pts += tmpFr->nb_samples;
-            //            LOGE("完成单帧音频编码数据拷贝");
-            //            LOGE("线程中 开始写视频帧");
-            write_audio_frame(oc,audioStPtr,tmpFr);
+                //            LOGE("完成单帧音频编码数据拷贝");
+                //            LOGE("线程中 开始写视频帧");
+                tmpFr->format = frData.format;
+                write_audio_frame(oc,audioStPtr,tmpFr);
+            }else if(frData.format == AV_SAMPLE_FMT_S16){   //需要音频格式转换
+                LOGE("线程中 开始处理一帧音频数据");
+                AVFrame* tmpFr = audioStPtr->tmp_frame;
+//                tmpFr->pts = audioStPtr->next_pts;
+                tmpFr->nb_samples = frData.nb_samples;
+                tmpFr->channels = frData.channels;
+                tmpFr->channel_layout = frData.channel_layout;
+                tmpFr->linesize[0] = frData.lineSize0;
+
+//                audioStPtr->next_pts += tmpFr->nb_samples;
+                // 直接拷贝数据
+                tmpFr->data[0] = (uint8_t *)av_malloc(frData.lineSize0);
+                memcpy(tmpFr->data[0],frData.data0,frData.lineSize0);
+                tmpFr->format = frData.format;
+
+                write_audio_frame(oc,audioStPtr,tmpFr);
+            }
+
 
         }
     }
@@ -709,6 +749,7 @@ void free_record_frames(DX_RecordRelateData* recData) {
         DX_FrameData dataFrame = recData->recordFramesQueue[i];
         uint8_t *data0 = dataFrame.data0;
         uint8_t *data1 = dataFrame.data1;
+        uint8_t *data2 = dataFrame.data2;
 
         if(dataFrame.dataNum == 1){
             if(data0 != NULL){
@@ -719,6 +760,11 @@ void free_record_frames(DX_RecordRelateData* recData) {
             if (data1 != NULL){
                 free(data1);
                 data1 = NULL;
+            }
+        }else if(dataFrame.dataNum == 3){
+            if(data2 != NULL){
+                free(data2);
+                data2 = NULL;
             }
         }
     }
