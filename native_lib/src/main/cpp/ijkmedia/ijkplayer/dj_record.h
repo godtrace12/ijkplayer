@@ -128,7 +128,5 @@ void close_stream(AVFormatContext *oc, OutputStream *ost);
 //执行录像文件
 void* doRecordFile(void *infoData);
 void free_record_frames(DX_RecordRelateData* recData);
-void fill_yuv_image(AVFrame *pict, int frame_index, int width, int height);
-void test_func();
 
 #endif //IJKPLAYER_DJ_RECORD_H
