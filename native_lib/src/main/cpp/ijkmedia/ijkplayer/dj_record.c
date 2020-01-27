@@ -543,7 +543,7 @@ void* doRecordFile(void *infoData){
 //    usleep(1000);
     sleep(1);
     DX_RecordRelateData *recordRelateDataPtr = (DX_RecordRelateData*)(infoData);
-
+    recordRelateDataPtr->isOnEncoding = DX_RECORD_ENCODING_ON;
 
     LOGE("线程中执行C函数执行停止执行录制 %s",recordRelateDataPtr->fileName);
 //    free_record_frames();
@@ -672,9 +672,9 @@ void* doRecordFile(void *infoData){
             recordRelateDataPtr->video_st.frame->pts = recordRelateDataPtr->video_st.next_pts++;
             //            fill_yuv_image(recordRelateDataPtr->video_st.frame,i,inSrcInfo.width,inSrcInfo.height);
 
-            LOGE("线程中 开始处理一帧视频数据");
+//            LOGE("线程中 开始处理一帧视频数据");
             write_video_frame(oc,&recordRelateDataPtr->video_st,recordRelateDataPtr->video_st.frame);
-            LOGE("线程中 完成一帧数据编码写入");
+//            LOGE("线程中 完成一帧数据编码写入");
         }else {     //音频帧
             //avcodec_decode_audio4  解码出来的音频数据是 AV_SAMPLE_FMT_FLTP,所以数据在data0 data1中
             //            LOGE("开始编码音频帧 nb_samples %d  channels %d  channel_layout %d",frData.nb_samples,frData.channels,frData.channel_layout);
@@ -695,7 +695,7 @@ void* doRecordFile(void *infoData){
                 tmpFr->format = frData.format;
                 write_audio_frame(oc,audioStPtr,tmpFr);
             }else if(frData.format == AV_SAMPLE_FMT_S16){   //需要音频格式转换
-                LOGE("线程中 开始处理一帧音频数据");
+//                LOGE("线程中 开始处理一帧音频数据");
                 AVFrame* tmpFr = audioStPtr->tmp_frame;
 //                tmpFr->pts = audioStPtr->next_pts;
                 tmpFr->nb_samples = frData.nb_samples;
@@ -738,6 +738,7 @@ void* doRecordFile(void *infoData){
     //free the stream
 
     avformat_free_context(oc);
+    recordRelateDataPtr->isOnEncoding = DX_RECORD_ENCODING_OFF;
     return NULL;
 }
 

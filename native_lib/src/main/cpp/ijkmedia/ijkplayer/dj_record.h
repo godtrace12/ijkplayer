@@ -40,6 +40,9 @@
 //录像状态
 #define DX_RECORD_STATUS_OFF 0
 #define DX_RECORD_STATUS_ON 1
+//编码状态
+#define DX_RECORD_ENCODING_OFF 0
+#define DX_RECORD_ENCODING_ON 1
 
 typedef struct OutputStream {
     AVStream *st;
@@ -102,6 +105,8 @@ typedef struct DX_RecordRelateData{
     int isInRecord;
     // 录像线程id
     pthread_t recThreadid;
+    // 是否正在录制数据编码中
+    int isOnEncoding;
 
 }DX_RecordRelateData;
 

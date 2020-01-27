@@ -14,6 +14,7 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.io.IOException;
@@ -43,7 +44,9 @@ public class IjkPlayActivity extends AppCompatActivity implements SurfaceHolder.
 //    private String playUrl = "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
 //    private String playUrl = "http://www.w3school.com.cn/example/html5/mov_bbb.mp4";
     private String playUrl = "http://vfx.mtime.cn/Video/2019/03/14/mp4/190314223540373995.mp4";
-//    private String playUrl = "file:///storage/emulated/0/HikvisionMobile/Album/1069/20191115/20191115135232516_155_Q01030A23060000CU9Q2.mp4";
+
+//    private String playUrl = "file:///storage/emulated/0/amazonIjk/2019-12-11 18:57:10.mp4";//
+
     /** 停止播放状态 */
     private final int STATUS_STOP = 0;
     /** 正在播放状态 */
@@ -159,25 +162,8 @@ public class IjkPlayActivity extends AppCompatActivity implements SurfaceHolder.
     public void startPlay(){
         if (mMediaPlayer != null) {
             try {
-//                mMediaPlayer.reset();
-                String amazons3 = "https://hxecloud.eos-beijing-2.cmecloud.cn/YKIX10B7IA9WQ0I7CEI7/3YUB0230843SKB7/2019/11/04/TYY20191104161606_161636.mp4?AWSAccessKeyId=YKIX10B7IA9WQ0I7CEI7&Expires=1572941658&Signature=TfHWWZvKnpHDIm1DV8XQX%2FwBbh0%3D";
-//                String amazonwuhan = "http://113.57.175.178:8161/hxecloud/TYY20190612170736_170804.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191104T060554Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=HIKzNT7037Ub6UC4V2990M84ZT3Arjux%2F20191104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e22e5a0261d92b0ca97bef6f4406fde15539619bf6b74aac3d3aa2ecec5c4b98\n" +
-//                        "\t";
-                String amazonwuhan1105 = "http://113.57.175.178:8161/hxecloud/TYY20190612170736_170804.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191105T082557Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=HIKzNT7037Ub6UC4V2990M84ZT3Arjux%2F20191105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=007efcdac0c8354e23d610f81656e1240a3c24e87e33008fed7cfcde3266eb07";
-                String amazonDecodeUrl = "http://113.57.175.178:8161/hxecloud/TYY20190612170736_170804.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191106T030514Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=HIKzNT7037Ub6UC4V2990M84ZT3Arjux/20191106/us-east-1/s3/aws4_request&X-Amz-Signature=f9e9cff124966614021b6da7f212d15887a6fcd1c1142e471b0ffbdc5cebe13c";
-                String amazonDecodeUrl11 = "http://113.57.175.178:8161/hxecloud/HIKzNT7037Ub6UC4V2990M84ZT3Arjux_Q01030A2101005CLBBJM_2019_11_14_20191114162417_20191114162500.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HIKzNT7037Ub6UC4V2990M84ZT3Arjux%2F20191115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191115T015855Z&X-Amz-Expires=10000&X-Amz-SignedHeaders=host&X-Amz-Signature=9a1f03c7298a23edc13b634c828afc8c30be09231472b8f4b0bf2c20b9665ae2";
-//                String cacheUrl = proxyCacheServer.getProxyUrl(playUrl);
-////                cacheUrl = "";
-//                Log.e(TAG, "startPlay: cacheUrl="+cacheUrl);
-//                // 1、正在下载中的url地址是本地http://127.0.0.1 ···  2、已经下载好的地址是本地文件地址 =file:///storage/emulated/0/Android/data/nativ.hikan.hk.dj.amazondemo/cache/video-cache/8d13094640b9d1bc26969b9985d92dde.mp4
-//                // 可以根据地址前缀来判断文件的下载情况，是否选择等文件完全下载完毕后再进行播放
-//                if (!TextUtils.isEmpty(cacheUrl)){
-//                    Log.e(TAG, "startPlay: play cacheUrl");
-//                    mMediaPlayer.setDataSource(cacheUrl);
-//                }else{
-                    Log.e(TAG, "startPlay: play original url=");
-                    mMediaPlayer.setDataSource(playUrl);
-//                }
+                Log.e(TAG, "startPlay: play original url=");
+                mMediaPlayer.setDataSource(playUrl);
             } catch (IOException e) {
                 Log.e(TAG, "start: 视频文件路径有问题");
                 e.printStackTrace();
@@ -213,16 +199,6 @@ public class IjkPlayActivity extends AppCompatActivity implements SurfaceHolder.
         int viewId = view.getId();
         switch (viewId){
             case R.id.btnCapture:
-//                Bitmap bitmap = Bitmap.createBitmap(mMediaPlayer.getVideoWidth(),mMediaPlayer.getVideoHeight(), Bitmap.Config.ARGB_8888);
-//                boolean result = mMediaPlayer.doCapture(bitmap);
-//                String filePath = FileUtil.generateCaptureFilePath();
-//                Log.e(TAG, "onClick: filePath="+filePath);
-//                if (result){
-//                    Log.e(TAG, "onClick: 截图成功，开始进行保存");
-//                    FileUtil.saveCapturePictrue(filePath,bitmap);
-//                }else{
-//                    Log.e(TAG, "onClick: 截图失败");
-//                }
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -231,8 +207,6 @@ public class IjkPlayActivity extends AppCompatActivity implements SurfaceHolder.
                 }).run();
                 break;
             case R.id.btnRecordStart:
-//                String strRecordPath = FileUtil.generateRecordFilePath();
-//                mMediaPlayer.doStartRecord(strRecordPath);
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -273,12 +247,18 @@ public class IjkPlayActivity extends AppCompatActivity implements SurfaceHolder.
         Log.e(TAG, "startRecord: ");
         String strRecordPath = FileUtil.generateRecordFilePath();
         Log.e(TAG, "startRecord: recordPath="+strRecordPath);
-//        mMediaPlayer.doStartRecord(strRecordPath);
+        boolean result = mMediaPlayer.doStartRecord(strRecordPath);
+        if (!result){
+            Log.e(TAG, "startRecord: 开启录制失败，正在编码中");
+            Toast.makeText(IjkPlayActivity.this,"开启录制失败，正在编码中",Toast.LENGTH_SHORT).show();
+        }else{
+            Log.e(TAG, "startRecord: 录制开启成功");
+        }
     }
 
     private void stopRecord(){
         Log.e(TAG, "stopRecord: ");
-//        mMediaPlayer.doStopRecord();
+        mMediaPlayer.doStopRecord();
     }
 
 

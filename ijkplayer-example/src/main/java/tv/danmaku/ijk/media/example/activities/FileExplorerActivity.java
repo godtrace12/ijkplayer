@@ -17,6 +17,7 @@
 
 package tv.danmaku.ijk.media.example.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -56,6 +57,8 @@ public class FileExplorerActivity extends AppActivity {
         super.onResume();
 
         FileExplorerEvents.getBus().register(this);
+        Intent intent = new Intent(FileExplorerActivity.this,IjkPlayActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -93,7 +96,9 @@ public class FileExplorerActivity extends AppActivity {
             mSettings.setLastDirectory(path);
             doOpenDirectory(path, true);
         } else if (f.exists()) {
-            VideoActivity.intentTo(this, f.getPath(), f.getName());
+//            VideoActivity.intentTo(this, f.getPath(), f.getName());
+            Intent intent = new Intent(FileExplorerActivity.this,IjkPlayActivity.class);
+            startActivity(intent);
         }
     }
 }

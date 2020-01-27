@@ -82,8 +82,8 @@ public class IjkExoMediaPlayer extends AbstractMediaPlayer {
     }
 
     @Override
-    public void doStartRecord(String recordVideoPath) {
-
+    public boolean doStartRecord(String recordVideoPath) {
+        return true;
     }
 
     @Override

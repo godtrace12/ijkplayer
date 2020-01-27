@@ -1296,8 +1296,8 @@ public final class IjkMediaPlayer extends AbstractMediaPlayer {
     }
 
     @Override
-    public void doStartRecord(String recordVideoPath) {
-        startRecord(recordVideoPath);
+    public boolean doStartRecord(String recordVideoPath) {
+        return (startRecord(recordVideoPath)==0)?true:false;
     }
 
     @Override

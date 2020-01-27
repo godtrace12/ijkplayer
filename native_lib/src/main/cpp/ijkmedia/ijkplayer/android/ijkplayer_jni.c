@@ -42,6 +42,7 @@
 #include "ijksdl/android/ijksdl_codec_android_mediadef.h"
 #include "ijkavformat/ijkavformat.h"
 #include <android/bitmap.h>
+#include <ijkplayer_internal.h>
 
 #define JNI_MODULE_PACKAGE      "tv/danmaku/ijk/media/player"
 #define JNI_CLASS_IJKPLAYER     "tv/danmaku/ijk/media/player/IjkMediaPlayer"
@@ -1161,8 +1162,10 @@ static jint IjkMediaPlayer_startRecord(JNIEnv* env,jobject thiz,jstring recordFi
     IjkMediaPlayer *mp = jni_get_media_player(env, thiz);
     const char *c_record_path = NULL;
     c_record_path = (*env)->GetStringUTFChars(env, recordFilePath, NULL );
-    ijkmp_start_record(mp,c_record_path);
-    return 0;
+    if(mp->ffplayer->dx_recordRelData.isOnEncoding == DX_RECORD_ENCODING_OFF){
+        ijkmp_start_record(mp,c_record_path);
+    }
+    return mp->ffplayer->dx_recordRelData.isOnEncoding;
 }
 
 static jint IjkMediaPlayer_stopRecord(JNIEnv* env,jobject thiz){

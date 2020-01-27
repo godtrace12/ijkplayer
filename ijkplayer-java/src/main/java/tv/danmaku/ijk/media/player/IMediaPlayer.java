@@ -216,7 +216,7 @@ public interface IMediaPlayer {
 
     boolean doCapture(Bitmap bitmap);
 
-    void doStartRecord(String recordVideoPath);
+    boolean doStartRecord(String recordVideoPath);
 
     void doStopRecord();
 }
